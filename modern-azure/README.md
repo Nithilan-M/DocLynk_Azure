@@ -4,8 +4,8 @@ Production-ready, Azure-native rebuild of the Doc_Lynk healthcare appointment sy
 
 ## Stack
 - Frontend: React + Vite + Tailwind CSS + Axios + React Router
-- Backend: FastAPI + SQLAlchemy + JWT + PostgreSQL
-- Database: Azure Database for PostgreSQL Flexible Server
+- Backend: FastAPI + SQLAlchemy + JWT + PyMySQL
+- Database: Azure Database for MySQL Flexible Server
 - Containers: Docker (backend)
 - CI/CD: GitHub Actions (build and push Docker image)
 - Hosting: Azure Static Web Apps (frontend) + Azure Container Apps (backend)
@@ -114,7 +114,7 @@ Notes:
 
 ## Azure Initialization (Database + Deployment)
 
-Use this flow when your database is Azure PostgreSQL and you deploy frontend/backend to Azure.
+Use this flow when your database is Azure MySQL Flexible Server and you deploy frontend/backend to Azure.
 
 ### 1. Prepare backend Azure env
 
@@ -124,7 +124,9 @@ Copy-Item .env.azure.example .env
 ```
 
 Set these required values in `backend/.env`:
-- `DATABASE_URL` (recommended) with `sslmode=require`
+- `DATABASE_URL` (optional; leave empty if using `DB_*` values)
+- `DB_HOST`, `DB_NAME`, `DB_USER`, `DB_PASSWORD`, `DB_PORT`
+- `DB_SSL_MODE=require`
 - `JWT_SECRET_KEY`
 - `OTP_SECRET_KEY`
 - `FRONTEND_ORIGINS` with your Azure Static Web App URL
@@ -161,8 +163,8 @@ docker compose build frontend
 
 ### 5. Azure deployment mapping
 
-- Azure Database for PostgreSQL: source of truth DB
-- Azure Container Apps (backend): use env values from `backend/.env.azure.example`
+- Azure Database for MySQL Flexible Server: source of truth DB
+- Azure App Service or Azure Container Apps (backend): use env values from `backend/.env.azure.example`
 - Azure Static Web Apps (frontend): set `VITE_API_URL` in SWA configuration
 
 ### 6. CORS checklist
@@ -180,7 +182,7 @@ Ensure backend `FRONTEND_ORIGINS` includes:
 - `DB_USER`
 - `DB_PASSWORD`
 - `DB_PORT`
-- `DB_SSLMODE`
+- `DB_SSL_MODE`
 - `JWT_SECRET_KEY`
 - `JWT_ALGORITHM`
 - `ACCESS_TOKEN_EXPIRE_MINUTES`
@@ -196,24 +198,23 @@ Ensure backend `FRONTEND_ORIGINS` includes:
 
 ## Azure Deployment
 
-### 1. Azure PostgreSQL Flexible Server
-1. Create a PostgreSQL Flexible Server in Azure.
+### 1. Azure MySQL Flexible Server
+1. Create a MySQL Flexible Server in Azure.
 2. Configure firewall rules to allow backend outbound access.
 3. Create database and user.
 4. Run SQL from `infra/sql/schema.sql`.
 
-### 2. Backend to Azure Container Apps
+### 2. Backend to Azure App Service or Azure Container Apps
 1. Build and push backend image (GitHub Action handles this on push to `main`).
-2. Create Azure Container Apps Environment.
-3. Create Container App:
-   - Image: `<dockerhub-user>/doclynk-api:latest`
-   - Port: `8000`
-   - Ingress: External enabled
-4. Set environment variables in Container App:
+2. Create your target service:
+  - App Service (Web App for Containers) or
+  - Container App in a Container Apps Environment
+3. Set environment variables in the backend service:
    - `DB_HOST`, `DB_NAME`, `DB_USER`, `DB_PASSWORD`, `DB_PORT`
+  - `DB_SSL_MODE`
    - `JWT_SECRET_KEY`, `JWT_ALGORITHM`, `ACCESS_TOKEN_EXPIRE_MINUTES`
    - `FRONTEND_ORIGINS`
-5. Set health probe path to `/health`.
+4. Set health probe path to `/health`.
 
 ### 3. Frontend to Azure Static Web Apps
 1. Create Static Web App and connect GitHub repo.

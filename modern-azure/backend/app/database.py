@@ -2,7 +2,6 @@ import os
 import logging
 from pathlib import Path
 from urllib.parse import quote_plus
-from urllib.parse import urlencode
 
 from dotenv import load_dotenv
 from sqlalchemy import create_engine
@@ -28,12 +27,7 @@ def _build_database_url() -> str:
     user = quote_plus(os.getenv("DB_USER", "root"))
     password = quote_plus(os.getenv("DB_PASSWORD", "root"))
     port = os.getenv("DB_PORT", "3306")
-    ssl_mode = os.getenv("DB_SSL_MODE", "require").lower()
-
-    base = f"mysql+pymysql://{user}:{password}@{host}:{port}/{name}"
-    if ssl_mode and ssl_mode != "disable":
-        return f"{base}?{urlencode({'ssl_mode': ssl_mode})}"
-    return base
+    return f"mysql+pymysql://{user}:{password}@{host}:{port}/{name}"
 
 
 def _build_mysql_connect_args() -> dict:
@@ -42,6 +36,7 @@ def _build_mysql_connect_args() -> dict:
         return {}
 
     ssl_ca = os.getenv("DB_SSL_CA")
+    # Use PyMySQL SSL dictionary instead of URL query parameters for portability.
     ssl_settings = {}
     if ssl_ca:
         ssl_settings["ca"] = ssl_ca
