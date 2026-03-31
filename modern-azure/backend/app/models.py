@@ -22,7 +22,7 @@ class AppointmentStatus(str, enum.Enum):
 class User(Base):
     __tablename__ = "users"
 
-    id: Mapped[int] = mapped_column(primary_key=True, index=True)
+    id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True, index=True)
     full_name: Mapped[str] = mapped_column("name", String(120), nullable=False)
     email: Mapped[str] = mapped_column(String(255), unique=True, index=True, nullable=False)
     password_hash: Mapped[str | None] = mapped_column("password", Text(), nullable=True)
@@ -43,7 +43,7 @@ class User(Base):
 class PendingRegistration(Base):
     __tablename__ = "pending_registrations"
 
-    id: Mapped[int] = mapped_column(primary_key=True, index=True)
+    id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True, index=True)
     full_name: Mapped[str] = mapped_column(String(120), nullable=False)
     email: Mapped[str] = mapped_column(String(255), unique=True, index=True, nullable=False)
     password_hash: Mapped[str] = mapped_column(Text(), nullable=False)
@@ -58,7 +58,7 @@ class PendingRegistration(Base):
 class PasswordResetOTP(Base):
     __tablename__ = "password_reset_otps"
 
-    id: Mapped[int] = mapped_column(primary_key=True, index=True)
+    id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True, index=True)
     email: Mapped[str] = mapped_column(String(255), unique=True, index=True, nullable=False)
     otp_hash: Mapped[str] = mapped_column(String(128), nullable=False)
     otp_expires_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False)
@@ -72,7 +72,7 @@ class Appointment(Base):
         UniqueConstraint("doctor_id", "date", "time_slot", name="appointments_doctor_id_date_time_slot_key"),
     )
 
-    id: Mapped[int] = mapped_column(primary_key=True, index=True)
+    id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True, index=True)
     patient_id: Mapped[int] = mapped_column(ForeignKey("users.id", ondelete="CASCADE"), nullable=False)
     doctor_id: Mapped[int] = mapped_column(ForeignKey("users.id", ondelete="CASCADE"), nullable=False)
     date: Mapped[Date] = mapped_column(Date(), nullable=False)
