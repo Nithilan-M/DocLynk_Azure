@@ -30,7 +30,7 @@ def _build_database_url() -> str:
     return f"mysql+pymysql://{user}:{password}@{host}:{port}/{name}"
 
 
-import ssl
+import certifi
 
 def _build_mysql_connect_args() -> dict:
     ssl_mode = os.getenv("DB_SSL_MODE", "require").lower()
@@ -41,8 +41,8 @@ def _build_mysql_connect_args() -> dict:
     if ssl_ca:
         return {"ssl": {"ca": ssl_ca}}
     
-    # Use standard SSL Context to avoid PyMySQL dict issues on Azure Linux
-    return {"ssl": ssl.create_default_context()}
+    # Provide explicitly the certifi CA bundle path for Azure Linux compatibility
+    return {"ssl": {"ca": certifi.where()}}
 
 
 DATABASE_URL = _build_database_url()

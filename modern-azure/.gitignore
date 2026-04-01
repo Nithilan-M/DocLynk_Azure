@@ -11,3 +11,5 @@ frontend/dist/
 .env
 *.pyc
 .DS_Store
+
+appsettings.json
