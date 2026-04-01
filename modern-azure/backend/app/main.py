@@ -48,7 +48,7 @@ def on_startup():
 
             indexes = inspector.get_indexes("users")
             index_names = {index["name"] for index in indexes}
-            if "users_verification_token_key" not in index_names:
+            if "users_verification_token_key" not in index_names and "verification_token" not in index_names:
                 conn.execute(text("CREATE UNIQUE INDEX users_verification_token_key ON users (verification_token)"))
     except SQLAlchemyError:
         logger.exception("Schema compatibility check failed during startup.")

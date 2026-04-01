@@ -112,8 +112,8 @@ def _booked_slots_for_doctor(db: Session, doctor_id: int, appointment_date) -> s
 
 
 def _acquire_slot_lock(db: Session, doctor_id: int, appointment_date, time_slot: str) -> None:
-    lock_key = f"book:{doctor_id}:{appointment_date}:{time_slot}"
-    db.execute(text("SELECT pg_advisory_xact_lock(hashtext(:lock_key))"), {"lock_key": lock_key})
+    lock_key = f"book:{doctor_id}:{appointment_date}:{time_slot}"[:64]  # MySQL lock names max length is 64
+    db.execute(text("SELECT GET_LOCK(:lock_key, 5)"), {"lock_key": lock_key})
 
 
 @router.get("/available-slots")

@@ -30,18 +30,19 @@ def _build_database_url() -> str:
     return f"mysql+pymysql://{user}:{password}@{host}:{port}/{name}"
 
 
+import ssl
+
 def _build_mysql_connect_args() -> dict:
     ssl_mode = os.getenv("DB_SSL_MODE", "require").lower()
     if ssl_mode == "disable":
         return {}
 
     ssl_ca = os.getenv("DB_SSL_CA")
-    # Use PyMySQL SSL dictionary instead of URL query parameters for portability.
-    ssl_settings = {}
     if ssl_ca:
-        ssl_settings["ca"] = ssl_ca
-
-    return {"ssl": ssl_settings}
+        return {"ssl": {"ca": ssl_ca}}
+    
+    # Use standard SSL Context to avoid PyMySQL dict issues on Azure Linux
+    return {"ssl": ssl.create_default_context()}
 
 
 DATABASE_URL = _build_database_url()
