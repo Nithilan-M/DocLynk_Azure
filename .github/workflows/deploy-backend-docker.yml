@@ -1,11 +1,11 @@
-name: Deploy Frontend Docker to Azure
+name: Deploy Backend Docker to Azure
 
 on:
   push:
     branches: [main]
     paths:
-      - 'modern-azure/frontend/**'
-      - '.github/workflows/deploy-frontend-docker.yml'
+      - 'modern-azure/backend/**'
+      - '.github/workflows/deploy-backend-docker.yml'
 
 jobs:
   build-and-deploy:
@@ -24,13 +24,13 @@ jobs:
 
       - name: Build and push Docker image
         run: |
-          cd modern-azure/frontend
-          docker build --build-arg VITE_API_URL=https://doclynk-backend-docker.azurewebsites.net -t doclynkregistry.azurecr.io/doclynk-frontend:latest .
-          docker push doclynkregistry.azurecr.io/doclynk-frontend:latest
+          cd modern-azure/backend
+          docker build -t doclynkregistry.azurecr.io/doclynk-backend:latest .
+          docker push doclynkregistry.azurecr.io/doclynk-backend:latest
 
       - name: Deploy to Azure Web App for Containers
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'doclynk-frontend-docker'
-          publish-profile: ${{ secrets.AZURE_FRONTEND_PUBLISH_PROFILE }}
-          images: 'doclynkregistry.azurecr.io/doclynk-frontend:latest'
+          app-name: 'doclynk-backend-docker'
+          publish-profile: ${{ secrets.AZURE_BACKEND_PUBLISH_PROFILE }}
+          images: 'doclynkregistry.azurecr.io/doclynk-backend:latest'
