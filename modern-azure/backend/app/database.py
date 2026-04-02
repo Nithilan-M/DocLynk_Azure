@@ -15,40 +15,26 @@ logger = logging.getLogger(__name__)
 
 
 def _build_database_url() -> str:
-    explicit_url = os.getenv("DATABASE_URL")
-    if explicit_url:
-        explicit_url = explicit_url.strip().strip('"').strip("'")
-        if explicit_url.startswith("mysql://"):
-            return explicit_url.replace("mysql://", "mysql+pymysql://", 1)
-        return explicit_url
-
-    host = os.getenv("DB_HOST", "localhost")
-    name = os.getenv("DB_NAME", "doclynk")
-    user = quote_plus(os.getenv("DB_USER", "root"))
-    password = quote_plus(os.getenv("DB_PASSWORD", "root"))
+    host = os.getenv("DB_HOST", "doclynkdb.mysql.database.azure.com")
+    name = os.getenv("DB_NAME", "doclynkdb")
+    user = os.getenv("DB_USER", "docadmin")
+    password = os.getenv("DB_PASSWORD", "secret")
     port = os.getenv("DB_PORT", "3306")
-    return f"mysql+pymysql://{user}:{password}@{host}:{port}/{name}"
-
-
-import certifi
-
-def _build_mysql_connect_args() -> dict:
-    ssl_mode = os.getenv("DB_SSL_MODE", "require").lower()
-    if ssl_mode == "disable":
-        return {}
-
-    ssl_ca = os.getenv("DB_SSL_CA")
-    if ssl_ca:
-        return {"ssl": {"ca": ssl_ca}}
     
-    # Provide explicitly the certifi CA bundle path for Azure Linux compatibility
-    return {"ssl": {"ca": certifi.where()}}
+    url = f"mysql+pymysql://{user}:{password}@{host}:{port}/{name}"
+    
+    ssl_mode = os.getenv("DB_SSL_MODE", "require").lower()
+    if ssl_mode != "disable":
+        ca_path = os.getenv("DB_SSL_CA") or certifi.where()
+        ca_path_encoded = urllib.parse.quote_plus(ca_path)
+        url += f"?ssl_ca={ca_path_encoded}"
+        
+    return url
 
 
 DATABASE_URL = _build_database_url()
-MYSQL_CONNECT_ARGS = _build_mysql_connect_args()
 
-engine = create_engine(DATABASE_URL, pool_pre_ping=True, connect_args=MYSQL_CONNECT_ARGS)
+engine = create_engine(DATABASE_URL, pool_pre_ping=True)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base = declarative_base()
 
