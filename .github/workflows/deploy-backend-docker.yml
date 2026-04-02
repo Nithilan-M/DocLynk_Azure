@@ -28,9 +28,4 @@ jobs:
           docker build -t doclynkregistry.azurecr.io/doclynk-backend:latest .
           docker push doclynkregistry.azurecr.io/doclynk-backend:latest
 
-      - name: Deploy to Azure Web App for Containers
-        uses: azure/webapps-deploy@v2
-        with:
-          app-name: 'doclynk-backend-docker'
-          publish-profile: ${{ secrets.AZURE_BACKEND_PUBLISH_PROFILE }}
-          images: 'doclynkregistry.azurecr.io/doclynk-backend:latest'
+
