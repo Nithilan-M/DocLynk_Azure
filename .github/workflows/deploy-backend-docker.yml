@@ -1,6 +1,7 @@
 name: Deploy Backend Docker to Azure
 
 on:
+  workflow_dispatch:
   push:
     branches: [main]
     paths:
