@@ -1,0 +1,36 @@
+name: Deploy Frontend Docker to Azure
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'modern-azure/frontend/**'
+      - '.github/workflows/deploy-frontend-docker.yml'
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Log in to Azure Container Registry
+        uses: azure/docker-login@v1
+        with:
+          login-server: doclynkregistry.azurecr.io
+          username: ${{ secrets.ACR_USERNAME }}
+          password: ${{ secrets.ACR_PASSWORD }}
+
+      - name: Build and push Docker image
+        run: |
+          cd modern-azure/frontend
+          docker build --build-arg VITE_API_URL=https://doclynk-backend-cecrhdcghyfpchch.centralindia-01.azurewebsites.net/ -t doclynkregistry.azurecr.io/doclynk-frontend:latest .
+          docker push doclynkregistry.azurecr.io/doclynk-frontend:latest
+
+      - name: Deploy to Azure Web App for Containers
+        uses: azure/webapps-deploy@v3
+        with:
+          app-name: 'doclynk-frontend-docker'
+          publish-profile: ${{ secrets.AZURE_FRONTEND_PUBLISH_PROFILE }}
+          images: 'doclynkregistry.azurecr.io/doclynk-frontend:latest'
