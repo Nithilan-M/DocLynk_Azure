@@ -1,0 +1,819 @@
+2026-04-02T13:41:34.4569835Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-04-02T13:41:36.2992659Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-04-02T13:41:36.3000879Z Container start method called.
+2026-04-02T13:41:36.3077539Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image doclynkregistry.azurecr.io/doclynk-backend:latest for doclynk-backend-docker., DetailsLevel: INFO
+2026-04-02T13:41:36.3082607Z Establishing network.
+2026-04-02T13:41:36.3162053Z Pulling image: doclynkregistry.azurecr.io/doclynk-backend:latest.
+2026-04-02T13:41:46.6144828Z Image doclynkregistry.azurecr.io/doclynk-backend:latest is pulled from registry doclynkregistry.azurecr.io
+2026-04-02T13:41:46.6226413Z Container is starting.
+2026-04-02T13:41:46.6479176Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for doclynk-backend-docker., DetailsLevel: INFO
+2026-04-02T13:41:46.6544031Z Establishing user namespace if not established already.
+2026-04-02T13:41:46.6547244Z Establishing network if not established already.
+2026-04-02T13:41:46.6671153Z Mounting volumes.
+2026-04-02T13:41:46.6673510Z Nested mountpoint volatile/logs
+2026-04-02T13:41:46.6695380Z Nested mountpoint 
+2026-04-02T13:41:46.7467668Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for doclynk-backend-docker. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-04-02T13:41:46.7760808Z Creating container.
+2026-04-02T13:41:46.8047570Z Creating pipes for streaming container io.
+2026-04-02T13:41:46.8050852Z Creating stdout named pipe at /podr/container/pipe/3b3298efc343_doclynk-backend-docker/stdout_8e2e9a6b43c34010a7728f5176d22fce.
+2026-04-02T13:41:46.8430320Z Successfully created stdout named pipe at: /podr/container/pipe/3b3298efc343_doclynk-backend-docker/stdout_8e2e9a6b43c34010a7728f5176d22fce.
+2026-04-02T13:41:46.8431420Z Opening named pipe /podr/container/pipe/3b3298efc343_doclynk-backend-docker/stdout_8e2e9a6b43c34010a7728f5176d22fce for reading in non-blocking mode.
+2026-04-02T13:41:46.8432404Z Successfully opened named pipe: /podr/container/pipe/3b3298efc343_doclynk-backend-docker/stdout_8e2e9a6b43c34010a7728f5176d22fce.
+2026-04-02T13:41:46.8433087Z Successfully removed non-blocking flag from /podr/container/pipe/3b3298efc343_doclynk-backend-docker/stdout_8e2e9a6b43c34010a7728f5176d22fce.
+2026-04-02T13:41:46.8445447Z Creating stderr named pipe at /podr/container/pipe/3b3298efc343_doclynk-backend-docker/stderr_b583f2388ae840c3afb1b4714f2cd734.
+2026-04-02T13:41:46.8447324Z Successfully created stderr named pipe at: /podr/container/pipe/3b3298efc343_doclynk-backend-docker/stderr_b583f2388ae840c3afb1b4714f2cd734.
+2026-04-02T13:41:46.8620334Z Opening named pipe /podr/container/pipe/3b3298efc343_doclynk-backend-docker/stderr_b583f2388ae840c3afb1b4714f2cd734 for reading in non-blocking mode.
+2026-04-02T13:41:46.8623021Z Successfully opened named pipe: /podr/container/pipe/3b3298efc343_doclynk-backend-docker/stderr_b583f2388ae840c3afb1b4714f2cd734.
+2026-04-02T13:41:46.8627319Z Successfully removed non-blocking flag from /podr/container/pipe/3b3298efc343_doclynk-backend-docker/stderr_b583f2388ae840c3afb1b4714f2cd734.
+2026-04-02T13:41:46.8629070Z Creating container with image: doclynkregistry.azurecr.io/doclynk-backend:latest from registry: doclynkregistry.azurecr.io and fully qualified image name: doclynkregistry.azurecr.io/doclynk-backend:latest
+2026-04-02T13:41:47.4439571Z Starting container: 3b3298efc343_doclynk-backend-docker.
+2026-04-02T13:41:47.5447823Z Starting watchers and probes.
+2026-04-02T13:41:47.5456403Z Starting metrics collection.
+2026-04-02T13:41:47.5458117Z Container is running.
+2026-04-02T13:41:47.5459064Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container doclynk-backend-docker successfully created and is running., DetailsLevel: INFO
+2026-04-02T13:41:47.6710025Z Container start method finished after 11370 ms.
+2026-04-02T13:41:47.7009238Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container doclynk-backend-docker successfully created and is running., DetailsLevel: INFO
+2026-04-02T13:41:47.7078077Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-04-02T13:41:54.5268087Z Container has finished running with exit code: 1.
+2026-04-02T13:41:54.5273367Z Container is terminating. Grace period: 5 seconds.
+2026-04-02T13:41:54.5276236Z Stop and delete container. Retry count = 0
+2026-04-02T13:41:54.5358418Z Stopping container: 3b3298efc343_doclynk-backend-docker.
+2026-04-02T13:41:54.5990275Z Deleting container: 3b3298efc343_doclynk-backend-docker. Retry count = 0
+2026-04-02T13:41:54.9595152Z Container spec TerminationMessagePolicy  path 
+2026-04-02T13:41:54.9602574Z Container is terminated. Total time elapsed: 432 ms.
+2026-04-02T13:41:54.9604360Z Site container: doclynk-backend-docker terminated during site startup.
+2026-04-02T13:41:54.9611660Z State: Stopping, Action: CancellingStartup, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site container: doclynk-backend-docker terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-02T13:41:55.0032405Z Site startup probe failed after 7.2863624 seconds.
+2026-04-02T13:41:55.2525126Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:41:55, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: doclynk-backend-docker terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-02T13:41:55.2628061Z Failed to start site. Revert by stopping site.
+2026-04-02T13:41:55.2728934Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:41:55, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: doclynk-backend-docker terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-02T13:41:55.2830398Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:41:55, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: doclynk-backend-docker terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-02T13:41:55.2830835Z Site: doclynk-backend-docker stopped.
+2026-04-02T13:41:55.3120222Z State: Stopping, Action: UnmountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:41:55, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: doclynk-backend-docker terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-02T13:41:55.7569453Z State: Stopping, Action: StoppingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:41:55, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: doclynk-backend-docker terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-02T13:41:56.2926009Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:41:55, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 04/02/2026 13:41:56 (UTC), DetailsLevel: ERR
+2026-04-02T13:41:56.5049179Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:41:55, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 04/02/2026 13:41:56 (UTC), DetailsLevel: ERR
+2026-04-02T13:42:01.7389035Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:41:55, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 04/02/2026 13:41:56 (UTC), DetailsLevel: ERR
+2026-04-02T13:42:03.9670430Z State: Starting, Action: StartingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:41:55, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 04/02/2026 13:41:56 (UTC), DetailsLevel: ERR
+2026-04-02T13:42:03.9751506Z Container start method called.
+2026-04-02T13:42:03.9752371Z State: Starting, Action: PullingImage, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:41:55, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pulling image doclynkregistry.azurecr.io/doclynk-backend:latest for doclynk-backend-docker., DetailsLevel: INFO
+2026-04-02T13:42:03.9753266Z Establishing network.
+2026-04-02T13:42:03.9763615Z Pulling image: doclynkregistry.azurecr.io/doclynk-backend:latest.
+2026-04-02T13:42:04.4018736Z Container is starting.
+2026-04-02T13:42:04.4026409Z State: Starting, Action: MountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:41:55, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Mounting volumes for doclynk-backend-docker., DetailsLevel: INFO
+2026-04-02T13:42:04.4029128Z Establishing user namespace if not established already.
+2026-04-02T13:42:04.4030289Z Establishing network if not established already.
+2026-04-02T13:42:04.4031497Z Mounting volumes.
+2026-04-02T13:42:04.4032946Z Nested mountpoint volatile/logs
+2026-04-02T13:42:04.5672631Z Nested mountpoint 
+2026-04-02T13:42:04.8080364Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:41:55, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for doclynk-backend-docker. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-04-02T13:42:04.8082922Z Creating container.
+2026-04-02T13:42:04.8083881Z Creating pipes for streaming container io.
+2026-04-02T13:42:04.8084666Z Creating stdout named pipe at /podr/container/pipe/a9efef53e499_doclynk-backend-docker/stdout_ae82c50c0f6c4d6f8f3131e814080ae2.
+2026-04-02T13:42:04.8086699Z Successfully created stdout named pipe at: /podr/container/pipe/a9efef53e499_doclynk-backend-docker/stdout_ae82c50c0f6c4d6f8f3131e814080ae2.
+2026-04-02T13:42:04.8087502Z Opening named pipe /podr/container/pipe/a9efef53e499_doclynk-backend-docker/stdout_ae82c50c0f6c4d6f8f3131e814080ae2 for reading in non-blocking mode.
+2026-04-02T13:42:04.8093379Z Successfully opened named pipe: /podr/container/pipe/a9efef53e499_doclynk-backend-docker/stdout_ae82c50c0f6c4d6f8f3131e814080ae2.
+2026-04-02T13:42:04.8094485Z Successfully removed non-blocking flag from /podr/container/pipe/a9efef53e499_doclynk-backend-docker/stdout_ae82c50c0f6c4d6f8f3131e814080ae2.
+2026-04-02T13:42:04.8095613Z Creating stderr named pipe at /podr/container/pipe/a9efef53e499_doclynk-backend-docker/stderr_f0940e9534c3422c9ff48a77a6492f3f.
+2026-04-02T13:42:04.8096843Z Successfully created stderr named pipe at: /podr/container/pipe/a9efef53e499_doclynk-backend-docker/stderr_f0940e9534c3422c9ff48a77a6492f3f.
+2026-04-02T13:42:04.8097564Z Opening named pipe /podr/container/pipe/a9efef53e499_doclynk-backend-docker/stderr_f0940e9534c3422c9ff48a77a6492f3f for reading in non-blocking mode.
+2026-04-02T13:42:04.8098401Z Successfully opened named pipe: /podr/container/pipe/a9efef53e499_doclynk-backend-docker/stderr_f0940e9534c3422c9ff48a77a6492f3f.
+2026-04-02T13:42:04.8099085Z Successfully removed non-blocking flag from /podr/container/pipe/a9efef53e499_doclynk-backend-docker/stderr_f0940e9534c3422c9ff48a77a6492f3f.
+2026-04-02T13:42:04.8099976Z Creating container with image: doclynkregistry.azurecr.io/doclynk-backend:latest from registry: doclynkregistry.azurecr.io and fully qualified image name: doclynkregistry.azurecr.io/doclynk-backend:latest
+2026-04-02T13:42:05.7874960Z Starting container: a9efef53e499_doclynk-backend-docker.
+2026-04-02T13:42:05.9209097Z Starting watchers and probes.
+2026-04-02T13:42:05.9385425Z Starting metrics collection.
+2026-04-02T13:42:05.9387469Z Container is running.
+2026-04-02T13:42:05.9396738Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:41:55, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container doclynk-backend-docker successfully created and is running., DetailsLevel: INFO
+2026-04-02T13:42:06.0187287Z Container start method finished after 2034 ms.
+2026-04-02T13:42:06.0191743Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:41:55, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container doclynk-backend-docker successfully created and is running., DetailsLevel: INFO
+2026-04-02T13:42:06.0192533Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:41:55, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-04-02T13:42:16.3451111Z Container has finished running with exit code: 1.
+2026-04-02T13:42:16.3458674Z Container is terminating. Grace period: 5 seconds.
+2026-04-02T13:42:16.3734790Z Stop and delete container. Retry count = 0
+2026-04-02T13:42:16.3741679Z Stopping container: a9efef53e499_doclynk-backend-docker.
+2026-04-02T13:42:16.5679116Z Deleting container: a9efef53e499_doclynk-backend-docker. Retry count = 0
+2026-04-02T13:42:16.9071102Z Container spec TerminationMessagePolicy  path 
+2026-04-02T13:42:16.9082419Z Container is terminated. Total time elapsed: 534 ms.
+2026-04-02T13:42:16.9092872Z Site container: doclynk-backend-docker terminated during site startup.
+2026-04-02T13:42:16.9162863Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:41:55, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: doclynk-backend-docker terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-02T13:42:16.9185475Z Site startup probe failed after 10.8975325 seconds.
+2026-04-02T13:42:17.2948081Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:42:17, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: doclynk-backend-docker terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-02T13:42:17.3348659Z Failed to start site. Revert by stopping site.
+2026-04-02T13:42:17.3359376Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:42:17, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: doclynk-backend-docker terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-02T13:42:17.3644648Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:42:17, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: doclynk-backend-docker terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-02T13:42:17.3645069Z Site: doclynk-backend-docker stopped.
+2026-04-02T13:42:17.3943441Z State: Stopping, Action: UnmountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:42:17, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: doclynk-backend-docker terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-02T13:42:17.8300963Z State: Stopping, Action: StoppingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:42:17, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: doclynk-backend-docker terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-02T13:42:18.3513220Z Site: doclynk-backend-docker will be blocked for 1 minutes till 04/02/2026 13:43:18
+2026-04-02T13:42:18.3516299Z State: Blocked, Action: StoppingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:42:17, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site: doclynk-backend-docker will be blocked for 1 minutes till 04/02/2026 13:43:18, DetailsLevel: WARN
+2026-04-02T13:42:18.3823719Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:42:17, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 04/02/2026 13:42:18 (UTC), DetailsLevel: WARN
+2026-04-02T13:42:18.8078791Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:42:17, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 04/02/2026 13:42:18 (UTC), DetailsLevel: WARN
+2026-04-02T13:42:24.4543351Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:42:17, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:43:18, DetailsLevel: WARN
+2026-04-02T13:42:24.4544016Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:42:29.5967123Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:42:17, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:43:18, DetailsLevel: WARN
+2026-04-02T13:42:29.5967774Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:42:34.7475386Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:42:17, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:43:18, DetailsLevel: WARN
+2026-04-02T13:42:34.7475918Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:42:39.8759078Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:42:17, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:43:18, DetailsLevel: WARN
+2026-04-02T13:42:39.8759720Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:42:45.0058830Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:42:17, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:43:18, DetailsLevel: WARN
+2026-04-02T13:42:45.0060882Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:42:50.0713905Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:42:17, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:43:18, DetailsLevel: WARN
+2026-04-02T13:42:50.0714463Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:42:55.1970761Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:42:17, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:43:18, DetailsLevel: WARN
+2026-04-02T13:42:55.1971472Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:43:00.4495315Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:42:17, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:43:18, DetailsLevel: WARN
+2026-04-02T13:43:00.4495922Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:43:05.5375857Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:42:17, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:43:18, DetailsLevel: WARN
+2026-04-02T13:43:05.5376425Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:43:10.7912830Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:42:17, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:43:18, DetailsLevel: WARN
+2026-04-02T13:43:10.7914236Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:43:15.9094074Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:42:17, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:43:18, DetailsLevel: WARN
+2026-04-02T13:43:15.9094592Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:43:18.3370830Z Site: doclynk-backend-docker is unblocked.
+2026-04-02T13:43:20.9996605Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:42:17, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:43:18, DetailsLevel: WARN
+2026-04-02T13:43:22.9570445Z State: Starting, Action: StartingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:42:17, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:43:18, DetailsLevel: WARN
+2026-04-02T13:43:22.9573049Z Container start method called.
+2026-04-02T13:43:22.9573536Z State: Starting, Action: PullingImage, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:42:17, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pulling image doclynkregistry.azurecr.io/doclynk-backend:latest for doclynk-backend-docker., DetailsLevel: INFO
+2026-04-02T13:43:22.9574469Z Establishing network.
+2026-04-02T13:43:22.9575511Z Pulling image: doclynkregistry.azurecr.io/doclynk-backend:latest.
+2026-04-02T13:43:23.3149717Z Container is starting.
+2026-04-02T13:43:23.3210487Z State: Starting, Action: MountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:42:17, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Mounting volumes for doclynk-backend-docker., DetailsLevel: INFO
+2026-04-02T13:43:23.3215478Z Establishing user namespace if not established already.
+2026-04-02T13:43:23.3219585Z Establishing network if not established already.
+2026-04-02T13:43:23.3220992Z Mounting volumes.
+2026-04-02T13:43:23.3227188Z Nested mountpoint volatile/logs
+2026-04-02T13:43:23.3659393Z Nested mountpoint 
+2026-04-02T13:43:23.4142030Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:42:17, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for doclynk-backend-docker. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-04-02T13:43:23.4143794Z Creating container.
+2026-04-02T13:43:23.4144904Z Creating pipes for streaming container io.
+2026-04-02T13:43:23.4205951Z Creating stdout named pipe at /podr/container/pipe/71a39505eb75_doclynk-backend-docker/stdout_1719a59f5aad4ea788720f42b3b06119.
+2026-04-02T13:43:23.4214493Z Successfully created stdout named pipe at: /podr/container/pipe/71a39505eb75_doclynk-backend-docker/stdout_1719a59f5aad4ea788720f42b3b06119.
+2026-04-02T13:43:23.4215778Z Opening named pipe /podr/container/pipe/71a39505eb75_doclynk-backend-docker/stdout_1719a59f5aad4ea788720f42b3b06119 for reading in non-blocking mode.
+2026-04-02T13:43:23.4218597Z Successfully opened named pipe: /podr/container/pipe/71a39505eb75_doclynk-backend-docker/stdout_1719a59f5aad4ea788720f42b3b06119.
+2026-04-02T13:43:23.4221138Z Successfully removed non-blocking flag from /podr/container/pipe/71a39505eb75_doclynk-backend-docker/stdout_1719a59f5aad4ea788720f42b3b06119.
+2026-04-02T13:43:23.4777874Z Creating stderr named pipe at /podr/container/pipe/71a39505eb75_doclynk-backend-docker/stderr_b65a517c864b4f1e96069e5fb369c883.
+2026-04-02T13:43:23.4784777Z Successfully created stderr named pipe at: /podr/container/pipe/71a39505eb75_doclynk-backend-docker/stderr_b65a517c864b4f1e96069e5fb369c883.
+2026-04-02T13:43:23.4786950Z Opening named pipe /podr/container/pipe/71a39505eb75_doclynk-backend-docker/stderr_b65a517c864b4f1e96069e5fb369c883 for reading in non-blocking mode.
+2026-04-02T13:43:23.4788501Z Successfully opened named pipe: /podr/container/pipe/71a39505eb75_doclynk-backend-docker/stderr_b65a517c864b4f1e96069e5fb369c883.
+2026-04-02T13:43:23.4790487Z Successfully removed non-blocking flag from /podr/container/pipe/71a39505eb75_doclynk-backend-docker/stderr_b65a517c864b4f1e96069e5fb369c883.
+2026-04-02T13:43:23.5229829Z Creating container with image: doclynkregistry.azurecr.io/doclynk-backend:latest from registry: doclynkregistry.azurecr.io and fully qualified image name: doclynkregistry.azurecr.io/doclynk-backend:latest
+2026-04-02T13:43:24.2198308Z Starting container: 71a39505eb75_doclynk-backend-docker.
+2026-04-02T13:43:24.3079660Z Starting watchers and probes.
+2026-04-02T13:43:24.3150386Z Starting metrics collection.
+2026-04-02T13:43:24.3232372Z Container is running.
+2026-04-02T13:43:24.3252182Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:42:17, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container doclynk-backend-docker successfully created and is running., DetailsLevel: INFO
+2026-04-02T13:43:24.5435964Z Container start method finished after 1541 ms.
+2026-04-02T13:43:24.5441197Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:42:17, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container doclynk-backend-docker successfully created and is running., DetailsLevel: INFO
+2026-04-02T13:43:24.5441658Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:42:17, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-04-02T13:43:32.0065581Z Container has finished running with exit code: 1.
+2026-04-02T13:43:32.0067463Z Container is terminating. Grace period: 5 seconds.
+2026-04-02T13:43:32.0073320Z Stop and delete container. Retry count = 0
+2026-04-02T13:43:32.0074655Z Stopping container: 71a39505eb75_doclynk-backend-docker.
+2026-04-02T13:43:32.0788602Z Deleting container: 71a39505eb75_doclynk-backend-docker. Retry count = 0
+2026-04-02T13:43:32.3253035Z Container spec TerminationMessagePolicy  path 
+2026-04-02T13:43:32.3257953Z Container is terminated. Total time elapsed: 318 ms.
+2026-04-02T13:43:32.3259249Z Site container: doclynk-backend-docker terminated during site startup.
+2026-04-02T13:43:32.3335273Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:42:17, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: doclynk-backend-docker terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-02T13:43:32.3494649Z Site startup probe failed after 7.8028084 seconds.
+2026-04-02T13:43:32.6076880Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:43:32, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: doclynk-backend-docker terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-02T13:43:32.6155268Z Failed to start site. Revert by stopping site.
+2026-04-02T13:43:32.6160254Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:43:32, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: doclynk-backend-docker terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-02T13:43:32.6548944Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:43:32, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: doclynk-backend-docker terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-02T13:43:32.6549203Z Site: doclynk-backend-docker stopped.
+2026-04-02T13:43:32.6722602Z State: Stopping, Action: UnmountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:43:32, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: doclynk-backend-docker terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-02T13:43:33.1040914Z State: Stopping, Action: StoppingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:43:32, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: doclynk-backend-docker terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-02T13:43:33.3674895Z Site: doclynk-backend-docker will be blocked for 1 minutes till 04/02/2026 13:44:33
+2026-04-02T13:43:33.3687232Z State: Blocked, Action: StoppingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:43:32, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site: doclynk-backend-docker will be blocked for 1 minutes till 04/02/2026 13:44:33, DetailsLevel: WARN
+2026-04-02T13:43:33.3780787Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:43:32, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 04/02/2026 13:43:33 (UTC), DetailsLevel: WARN
+2026-04-02T13:43:33.8493427Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:43:32, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 04/02/2026 13:43:33 (UTC), DetailsLevel: WARN
+2026-04-02T13:43:38.8502948Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:43:32, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:44:33, DetailsLevel: WARN
+2026-04-02T13:43:38.8503222Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:43:43.9548804Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:43:32, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:44:33, DetailsLevel: WARN
+2026-04-02T13:43:43.9551111Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:43:49.0717130Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:43:32, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:44:33, DetailsLevel: WARN
+2026-04-02T13:43:49.0717419Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:43:54.1814464Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:43:32, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:44:33, DetailsLevel: WARN
+2026-04-02T13:43:54.1814714Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:43:59.2999063Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:43:32, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:44:33, DetailsLevel: WARN
+2026-04-02T13:43:59.2999591Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:44:04.4637481Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:43:32, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:44:33, DetailsLevel: WARN
+2026-04-02T13:44:04.4638300Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:44:09.7269170Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:43:32, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:44:33, DetailsLevel: WARN
+2026-04-02T13:44:09.7269732Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:44:14.8213526Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:43:32, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:44:33, DetailsLevel: WARN
+2026-04-02T13:44:14.8214048Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:44:20.2500096Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:43:32, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:44:33, DetailsLevel: WARN
+2026-04-02T13:44:20.2893950Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:44:25.7034749Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:43:32, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:44:33, DetailsLevel: WARN
+2026-04-02T13:44:25.7035301Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:44:31.0360433Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:43:32, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:44:33, DetailsLevel: WARN
+2026-04-02T13:44:31.0363098Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:44:33.3778931Z Site: doclynk-backend-docker is unblocked.
+2026-04-02T13:44:36.2740026Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:43:32, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:44:33, DetailsLevel: WARN
+2026-04-02T13:44:38.7719766Z State: Starting, Action: StartingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:43:32, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:44:33, DetailsLevel: WARN
+2026-04-02T13:44:38.7722498Z Container start method called.
+2026-04-02T13:44:38.7733850Z State: Starting, Action: PullingImage, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:43:32, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pulling image doclynkregistry.azurecr.io/doclynk-backend:latest for doclynk-backend-docker., DetailsLevel: INFO
+2026-04-02T13:44:38.7735618Z Establishing network.
+2026-04-02T13:44:38.7738747Z Pulling image: doclynkregistry.azurecr.io/doclynk-backend:latest.
+2026-04-02T13:44:39.3436857Z Container is starting.
+2026-04-02T13:44:39.3461400Z State: Starting, Action: MountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:43:32, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Mounting volumes for doclynk-backend-docker., DetailsLevel: INFO
+2026-04-02T13:44:39.3546010Z Establishing user namespace if not established already.
+2026-04-02T13:44:39.3554618Z Establishing network if not established already.
+2026-04-02T13:44:39.3634384Z Mounting volumes.
+2026-04-02T13:44:39.3654549Z Nested mountpoint volatile/logs
+2026-04-02T13:44:39.6890894Z Nested mountpoint 
+2026-04-02T13:44:39.7280406Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:43:32, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for doclynk-backend-docker. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-04-02T13:44:39.7284154Z Creating container.
+2026-04-02T13:44:39.7403973Z Creating pipes for streaming container io.
+2026-04-02T13:44:39.7905789Z Creating stdout named pipe at /podr/container/pipe/ed7cdb5d9311_doclynk-backend-docker/stdout_e8d9c3e5f00647128f1aa6f90cf957e3.
+2026-04-02T13:44:39.7908613Z Successfully created stdout named pipe at: /podr/container/pipe/ed7cdb5d9311_doclynk-backend-docker/stdout_e8d9c3e5f00647128f1aa6f90cf957e3.
+2026-04-02T13:44:39.8184442Z Opening named pipe /podr/container/pipe/ed7cdb5d9311_doclynk-backend-docker/stdout_e8d9c3e5f00647128f1aa6f90cf957e3 for reading in non-blocking mode.
+2026-04-02T13:44:39.8190943Z Successfully opened named pipe: /podr/container/pipe/ed7cdb5d9311_doclynk-backend-docker/stdout_e8d9c3e5f00647128f1aa6f90cf957e3.
+2026-04-02T13:44:39.8193954Z Successfully removed non-blocking flag from /podr/container/pipe/ed7cdb5d9311_doclynk-backend-docker/stdout_e8d9c3e5f00647128f1aa6f90cf957e3.
+2026-04-02T13:44:39.8201686Z Creating stderr named pipe at /podr/container/pipe/ed7cdb5d9311_doclynk-backend-docker/stderr_66c81ca0603943029f0d353891c2b39e.
+2026-04-02T13:44:39.8289093Z Successfully created stderr named pipe at: /podr/container/pipe/ed7cdb5d9311_doclynk-backend-docker/stderr_66c81ca0603943029f0d353891c2b39e.
+2026-04-02T13:44:39.8295164Z Opening named pipe /podr/container/pipe/ed7cdb5d9311_doclynk-backend-docker/stderr_66c81ca0603943029f0d353891c2b39e for reading in non-blocking mode.
+2026-04-02T13:44:39.8297868Z Successfully opened named pipe: /podr/container/pipe/ed7cdb5d9311_doclynk-backend-docker/stderr_66c81ca0603943029f0d353891c2b39e.
+2026-04-02T13:44:39.8299722Z Successfully removed non-blocking flag from /podr/container/pipe/ed7cdb5d9311_doclynk-backend-docker/stderr_66c81ca0603943029f0d353891c2b39e.
+2026-04-02T13:44:39.8787783Z Creating container with image: doclynkregistry.azurecr.io/doclynk-backend:latest from registry: doclynkregistry.azurecr.io and fully qualified image name: doclynkregistry.azurecr.io/doclynk-backend:latest
+2026-04-02T13:44:41.4830678Z Starting container: ed7cdb5d9311_doclynk-backend-docker.
+2026-04-02T13:44:41.6253512Z Starting watchers and probes.
+2026-04-02T13:44:41.6358730Z Starting metrics collection.
+2026-04-02T13:44:41.6365369Z Container is running.
+2026-04-02T13:44:41.6366247Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:43:32, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container doclynk-backend-docker successfully created and is running., DetailsLevel: INFO
+2026-04-02T13:44:41.7569379Z Container start method finished after 2984 ms.
+2026-04-02T13:44:41.7578064Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:43:32, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container doclynk-backend-docker successfully created and is running., DetailsLevel: INFO
+2026-04-02T13:44:41.7649579Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:43:32, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-04-02T13:44:58.1622322Z Container has finished running with exit code: 1.
+2026-04-02T13:44:58.1626227Z Container is terminating. Grace period: 5 seconds.
+2026-04-02T13:44:58.1734020Z Stop and delete container. Retry count = 0
+2026-04-02T13:44:58.1816222Z Stopping container: ed7cdb5d9311_doclynk-backend-docker.
+2026-04-02T13:44:58.2702848Z Deleting container: ed7cdb5d9311_doclynk-backend-docker. Retry count = 0
+2026-04-02T13:44:58.6932215Z Container spec TerminationMessagePolicy  path 
+2026-04-02T13:44:58.7025281Z Container is terminated. Total time elapsed: 529 ms.
+2026-04-02T13:44:58.7034685Z Site container: doclynk-backend-docker terminated during site startup.
+2026-04-02T13:44:58.7312118Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:43:32, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: doclynk-backend-docker terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-02T13:44:58.7709298Z Site startup probe failed after 16.9749178 seconds.
+2026-04-02T13:44:59.1095657Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:44:59, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: doclynk-backend-docker terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-02T13:44:59.1297848Z Failed to start site. Revert by stopping site.
+2026-04-02T13:44:59.1665973Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:44:59, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: doclynk-backend-docker terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-02T13:44:59.1760730Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:44:59, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: doclynk-backend-docker terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-02T13:44:59.1761055Z Site: doclynk-backend-docker stopped.
+2026-04-02T13:44:59.1965649Z State: Stopping, Action: UnmountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:44:59, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: doclynk-backend-docker terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-02T13:44:59.6200236Z State: Stopping, Action: StoppingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:44:59, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: doclynk-backend-docker terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-02T13:45:00.1447357Z Site: doclynk-backend-docker will be blocked for 2 minutes till 04/02/2026 13:47:00
+2026-04-02T13:45:00.1537158Z State: Blocked, Action: StoppingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:44:59, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site: doclynk-backend-docker will be blocked for 2 minutes till 04/02/2026 13:47:00, DetailsLevel: WARN
+2026-04-02T13:45:00.1639112Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:44:59, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 04/02/2026 13:45:00 (UTC), DetailsLevel: WARN
+2026-04-02T13:45:00.4927368Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:44:59, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 04/02/2026 13:45:00 (UTC), DetailsLevel: WARN
+2026-04-02T13:45:00.6876266Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:44:59, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:47:00, DetailsLevel: WARN
+2026-04-02T13:45:00.6876566Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:45:00.8734447Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:44:59, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:47:00, DetailsLevel: WARN
+2026-04-02T13:45:00.8734694Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:45:01.2072672Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:44:59, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:47:00, DetailsLevel: WARN
+2026-04-02T13:45:01.2090036Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:45:03.5384303Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:44:59, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:47:00, DetailsLevel: WARN
+2026-04-02T13:45:03.5384597Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:45:04.0624015Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:44:59, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:47:00, DetailsLevel: WARN
+2026-04-02T13:45:04.0625529Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:45:05.5345780Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:44:59, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:47:00, DetailsLevel: WARN
+2026-04-02T13:45:05.5348198Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:45:10.7663615Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:44:59, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:47:00, DetailsLevel: WARN
+2026-04-02T13:45:10.7664354Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:45:16.0464397Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:44:59, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:47:00, DetailsLevel: WARN
+2026-04-02T13:45:16.0464711Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:45:21.2666428Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:44:59, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:47:00, DetailsLevel: WARN
+2026-04-02T13:45:21.2667840Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:45:26.3571988Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:44:59, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:47:00, DetailsLevel: WARN
+2026-04-02T13:45:26.3572583Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:45:31.4887802Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:44:59, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:47:00, DetailsLevel: WARN
+2026-04-02T13:45:31.4888928Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:45:36.7853272Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:44:59, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:47:00, DetailsLevel: WARN
+2026-04-02T13:45:36.7855197Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:45:41.9040691Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:44:59, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:47:00, DetailsLevel: WARN
+2026-04-02T13:45:41.9229047Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:45:47.0362900Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:44:59, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:47:00, DetailsLevel: WARN
+2026-04-02T13:45:47.0368555Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:45:52.1319511Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:44:59, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:47:00, DetailsLevel: WARN
+2026-04-02T13:45:52.1320157Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:45:57.2559072Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:44:59, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:47:00, DetailsLevel: WARN
+2026-04-02T13:45:57.2559741Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:46:02.4012963Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:44:59, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:47:00, DetailsLevel: WARN
+2026-04-02T13:46:02.4013218Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:46:07.5920141Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:44:59, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:47:00, DetailsLevel: WARN
+2026-04-02T13:46:07.5996280Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:46:12.7144310Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:44:59, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:47:00, DetailsLevel: WARN
+2026-04-02T13:46:12.7144607Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:46:17.8343000Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:44:59, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:47:00, DetailsLevel: WARN
+2026-04-02T13:46:17.8343537Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:46:22.9481632Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:44:59, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:47:00, DetailsLevel: WARN
+2026-04-02T13:46:22.9482011Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:46:28.0794466Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:44:59, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:47:00, DetailsLevel: WARN
+2026-04-02T13:46:28.0795025Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:46:33.1774624Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:44:59, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:47:00, DetailsLevel: WARN
+2026-04-02T13:46:33.1774912Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:46:38.3269849Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:44:59, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:47:00, DetailsLevel: WARN
+2026-04-02T13:46:38.3270512Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:46:43.4835166Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:44:59, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:47:00, DetailsLevel: WARN
+2026-04-02T13:46:43.4835702Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:46:50.6438112Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:44:59, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:47:00, DetailsLevel: WARN
+2026-04-02T13:46:50.6438389Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:46:55.8296448Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:44:59, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:47:00, DetailsLevel: WARN
+2026-04-02T13:46:55.8297051Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:47:00.1468822Z Site: doclynk-backend-docker is unblocked.
+2026-04-02T13:47:00.9567768Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:44:59, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:47:00, DetailsLevel: WARN
+2026-04-02T13:47:04.2432580Z State: Starting, Action: StartingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:44:59, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:47:00, DetailsLevel: WARN
+2026-04-02T13:47:04.2438123Z Container start method called.
+2026-04-02T13:47:04.2451609Z State: Starting, Action: PullingImage, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:44:59, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pulling image doclynkregistry.azurecr.io/doclynk-backend:latest for doclynk-backend-docker., DetailsLevel: INFO
+2026-04-02T13:47:04.3582281Z Establishing network.
+2026-04-02T13:47:04.5016245Z Pulling image: doclynkregistry.azurecr.io/doclynk-backend:latest.
+2026-04-02T13:47:05.8719138Z Container is starting.
+2026-04-02T13:47:05.8755020Z State: Starting, Action: MountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:44:59, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Mounting volumes for doclynk-backend-docker., DetailsLevel: INFO
+2026-04-02T13:47:05.8757720Z Establishing user namespace if not established already.
+2026-04-02T13:47:05.8780045Z Establishing network if not established already.
+2026-04-02T13:47:05.8786029Z Mounting volumes.
+2026-04-02T13:47:05.8794013Z Nested mountpoint volatile/logs
+2026-04-02T13:47:05.9156424Z Nested mountpoint 
+2026-04-02T13:47:05.9453261Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:44:59, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for doclynk-backend-docker. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-04-02T13:47:05.9456030Z Creating container.
+2026-04-02T13:47:05.9983342Z Creating pipes for streaming container io.
+2026-04-02T13:47:05.9991158Z Creating stdout named pipe at /podr/container/pipe/4401a3f6c3fa_doclynk-backend-docker/stdout_d6a83c58c6fa4b4fb30b8216b596d0f6.
+2026-04-02T13:47:05.9997175Z Successfully created stdout named pipe at: /podr/container/pipe/4401a3f6c3fa_doclynk-backend-docker/stdout_d6a83c58c6fa4b4fb30b8216b596d0f6.
+2026-04-02T13:47:06.0002673Z Opening named pipe /podr/container/pipe/4401a3f6c3fa_doclynk-backend-docker/stdout_d6a83c58c6fa4b4fb30b8216b596d0f6 for reading in non-blocking mode.
+2026-04-02T13:47:06.0007070Z Successfully opened named pipe: /podr/container/pipe/4401a3f6c3fa_doclynk-backend-docker/stdout_d6a83c58c6fa4b4fb30b8216b596d0f6.
+2026-04-02T13:47:06.0644900Z Successfully removed non-blocking flag from /podr/container/pipe/4401a3f6c3fa_doclynk-backend-docker/stdout_d6a83c58c6fa4b4fb30b8216b596d0f6.
+2026-04-02T13:47:06.0835681Z Creating stderr named pipe at /podr/container/pipe/4401a3f6c3fa_doclynk-backend-docker/stderr_603c94503616435a95e074ef7a122d49.
+2026-04-02T13:47:06.0837698Z Successfully created stderr named pipe at: /podr/container/pipe/4401a3f6c3fa_doclynk-backend-docker/stderr_603c94503616435a95e074ef7a122d49.
+2026-04-02T13:47:06.0838531Z Opening named pipe /podr/container/pipe/4401a3f6c3fa_doclynk-backend-docker/stderr_603c94503616435a95e074ef7a122d49 for reading in non-blocking mode.
+2026-04-02T13:47:06.0839450Z Successfully opened named pipe: /podr/container/pipe/4401a3f6c3fa_doclynk-backend-docker/stderr_603c94503616435a95e074ef7a122d49.
+2026-04-02T13:47:06.0840203Z Successfully removed non-blocking flag from /podr/container/pipe/4401a3f6c3fa_doclynk-backend-docker/stderr_603c94503616435a95e074ef7a122d49.
+2026-04-02T13:47:06.0852251Z Creating container with image: doclynkregistry.azurecr.io/doclynk-backend:latest from registry: doclynkregistry.azurecr.io and fully qualified image name: doclynkregistry.azurecr.io/doclynk-backend:latest
+2026-04-02T13:47:07.3390455Z Starting container: 4401a3f6c3fa_doclynk-backend-docker.
+2026-04-02T13:47:07.4378889Z Starting watchers and probes.
+2026-04-02T13:47:07.4459422Z Starting metrics collection.
+2026-04-02T13:47:07.4466390Z Container is running.
+2026-04-02T13:47:07.4470697Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:44:59, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container doclynk-backend-docker successfully created and is running., DetailsLevel: INFO
+2026-04-02T13:47:07.5172267Z Container start method finished after 3273 ms.
+2026-04-02T13:47:07.5180414Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:44:59, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container doclynk-backend-docker successfully created and is running., DetailsLevel: INFO
+2026-04-02T13:47:07.5180981Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:44:59, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-04-02T13:47:27.5959947Z Container has finished running with exit code: 1.
+2026-04-02T13:47:27.5963000Z Container is terminating. Grace period: 5 seconds.
+2026-04-02T13:47:27.6051762Z Stop and delete container. Retry count = 0
+2026-04-02T13:47:27.6055790Z Stopping container: 4401a3f6c3fa_doclynk-backend-docker.
+2026-04-02T13:47:27.8563193Z Deleting container: 4401a3f6c3fa_doclynk-backend-docker. Retry count = 0
+2026-04-02T13:47:28.3435288Z Container spec TerminationMessagePolicy  path 
+2026-04-02T13:47:28.3503863Z Container is terminated. Total time elapsed: 753 ms.
+2026-04-02T13:47:28.3583268Z Site container: doclynk-backend-docker terminated during site startup.
+2026-04-02T13:47:28.3606341Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:44:59, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: doclynk-backend-docker terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-02T13:47:28.4346639Z Site startup probe failed after 20.8363788 seconds.
+2026-04-02T13:47:28.8724878Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:47:28, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: doclynk-backend-docker terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-02T13:47:28.8822976Z Failed to start site. Revert by stopping site.
+2026-04-02T13:47:28.8825705Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:47:28, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: doclynk-backend-docker terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-02T13:47:28.9167040Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:47:28, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: doclynk-backend-docker terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-02T13:47:28.9167292Z Site: doclynk-backend-docker stopped.
+2026-04-02T13:47:55.6737046Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:47:28, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 04/02/2026 13:47:29 (UTC), DetailsLevel: WARN
+2026-04-02T13:47:59.1136283Z State: Starting, Action: StartingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:47:28, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 04/02/2026 13:47:29 (UTC), DetailsLevel: WARN
+2026-04-02T13:47:59.1148642Z Container start method called.
+2026-04-02T13:47:59.1157855Z State: Starting, Action: PullingImage, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:47:28, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pulling image doclynkregistry.azurecr.io/doclynk-backend:latest for doclynk-backend-docker., DetailsLevel: INFO
+2026-04-02T13:47:59.1235564Z Establishing network.
+2026-04-02T13:47:59.1243578Z Pulling image: doclynkregistry.azurecr.io/doclynk-backend:latest.
+2026-04-02T13:47:59.9014951Z Container is starting.
+2026-04-02T13:47:59.9015791Z State: Starting, Action: MountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:47:28, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Mounting volumes for doclynk-backend-docker., DetailsLevel: INFO
+2026-04-02T13:47:59.9016615Z Establishing user namespace if not established already.
+2026-04-02T13:47:59.9017481Z Establishing network if not established already.
+2026-04-02T13:47:59.9018363Z Mounting volumes.
+2026-04-02T13:47:59.9019512Z Nested mountpoint volatile/logs
+2026-04-02T13:48:00.0639413Z Nested mountpoint 
+2026-04-02T13:48:00.1458121Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:47:28, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for doclynk-backend-docker. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-04-02T13:48:00.2221738Z Creating container.
+2026-04-02T13:48:00.2222882Z Creating pipes for streaming container io.
+2026-04-02T13:48:00.2223709Z Creating stdout named pipe at /podr/container/pipe/d3ec541a2362_doclynk-backend-docker/stdout_72fa6d1659a24d3a89f845e1c04d436b.
+2026-04-02T13:48:00.2225741Z Successfully created stdout named pipe at: /podr/container/pipe/d3ec541a2362_doclynk-backend-docker/stdout_72fa6d1659a24d3a89f845e1c04d436b.
+2026-04-02T13:48:00.2226517Z Opening named pipe /podr/container/pipe/d3ec541a2362_doclynk-backend-docker/stdout_72fa6d1659a24d3a89f845e1c04d436b for reading in non-blocking mode.
+2026-04-02T13:48:00.2227535Z Successfully opened named pipe: /podr/container/pipe/d3ec541a2362_doclynk-backend-docker/stdout_72fa6d1659a24d3a89f845e1c04d436b.
+2026-04-02T13:48:00.2228270Z Successfully removed non-blocking flag from /podr/container/pipe/d3ec541a2362_doclynk-backend-docker/stdout_72fa6d1659a24d3a89f845e1c04d436b.
+2026-04-02T13:48:00.2419938Z Creating stderr named pipe at /podr/container/pipe/d3ec541a2362_doclynk-backend-docker/stderr_9fbccafbc59d4bab9b463cea0b714785.
+2026-04-02T13:48:00.2702541Z Successfully created stderr named pipe at: /podr/container/pipe/d3ec541a2362_doclynk-backend-docker/stderr_9fbccafbc59d4bab9b463cea0b714785.
+2026-04-02T13:48:00.2704818Z Opening named pipe /podr/container/pipe/d3ec541a2362_doclynk-backend-docker/stderr_9fbccafbc59d4bab9b463cea0b714785 for reading in non-blocking mode.
+2026-04-02T13:48:00.2708298Z Successfully opened named pipe: /podr/container/pipe/d3ec541a2362_doclynk-backend-docker/stderr_9fbccafbc59d4bab9b463cea0b714785.
+2026-04-02T13:48:00.2711195Z Successfully removed non-blocking flag from /podr/container/pipe/d3ec541a2362_doclynk-backend-docker/stderr_9fbccafbc59d4bab9b463cea0b714785.
+2026-04-02T13:48:00.2713520Z Creating container with image: doclynkregistry.azurecr.io/doclynk-backend:latest from registry: doclynkregistry.azurecr.io and fully qualified image name: doclynkregistry.azurecr.io/doclynk-backend:latest
+2026-04-02T13:48:01.3700879Z Starting container: d3ec541a2362_doclynk-backend-docker.
+2026-04-02T13:48:01.5003804Z Starting watchers and probes.
+2026-04-02T13:48:01.5007036Z Starting metrics collection.
+2026-04-02T13:48:01.5109204Z Container is running.
+2026-04-02T13:48:01.5110736Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:47:28, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container doclynk-backend-docker successfully created and is running., DetailsLevel: INFO
+2026-04-02T13:48:01.9539745Z Container start method finished after 2821 ms.
+2026-04-02T13:48:01.9543268Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:47:28, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container doclynk-backend-docker successfully created and is running., DetailsLevel: INFO
+2026-04-02T13:48:01.9543500Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:47:28, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-04-02T13:48:27.2615761Z Container has finished running with exit code: 1.
+2026-04-02T13:48:27.2625705Z Container is terminating. Grace period: 5 seconds.
+2026-04-02T13:48:27.2636011Z Stop and delete container. Retry count = 0
+2026-04-02T13:48:27.2639260Z Stopping container: d3ec541a2362_doclynk-backend-docker.
+2026-04-02T13:48:27.4095493Z Deleting container: d3ec541a2362_doclynk-backend-docker. Retry count = 0
+2026-04-02T13:48:28.1181747Z Container spec TerminationMessagePolicy  path 
+2026-04-02T13:48:28.1183202Z Container is terminated. Total time elapsed: 855 ms.
+2026-04-02T13:48:28.1184023Z Site container: doclynk-backend-docker terminated during site startup.
+2026-04-02T13:48:28.1185036Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:47:28, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: doclynk-backend-docker terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-02T13:48:28.1793437Z Site startup probe failed after 26.2245023 seconds.
+2026-04-02T13:48:28.5301793Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:48:28, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: doclynk-backend-docker terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-02T13:48:28.5590402Z Failed to start site. Revert by stopping site.
+2026-04-02T13:48:28.5592716Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:48:28, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: doclynk-backend-docker terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-02T13:48:28.6002428Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:48:28, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: doclynk-backend-docker terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-02T13:48:28.6002870Z Site: doclynk-backend-docker stopped.
+2026-04-02T13:48:28.6299080Z State: Stopping, Action: UnmountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:48:28, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: doclynk-backend-docker terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-02T13:48:29.1929342Z State: Stopping, Action: StoppingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:48:28, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: doclynk-backend-docker terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-02T13:48:29.7982812Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:48:28, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 04/02/2026 13:48:29 (UTC), DetailsLevel: ERR
+2026-04-02T13:48:30.0676056Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:48:28, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 04/02/2026 13:48:29 (UTC), DetailsLevel: ERR
+2026-04-02T13:48:35.2856222Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:48:28, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 04/02/2026 13:48:29 (UTC), DetailsLevel: ERR
+2026-04-02T13:48:37.7172473Z State: Starting, Action: StartingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:48:28, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 04/02/2026 13:48:29 (UTC), DetailsLevel: ERR
+2026-04-02T13:48:37.7173695Z Container start method called.
+2026-04-02T13:48:37.7174149Z State: Starting, Action: PullingImage, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:48:28, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pulling image doclynkregistry.azurecr.io/doclynk-backend:latest for doclynk-backend-docker., DetailsLevel: INFO
+2026-04-02T13:48:37.7174904Z Establishing network.
+2026-04-02T13:48:37.7175849Z Pulling image: doclynkregistry.azurecr.io/doclynk-backend:latest.
+2026-04-02T13:48:38.0722135Z Container is starting.
+2026-04-02T13:48:38.0722879Z State: Starting, Action: MountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:48:28, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Mounting volumes for doclynk-backend-docker., DetailsLevel: INFO
+2026-04-02T13:48:38.0723709Z Establishing user namespace if not established already.
+2026-04-02T13:48:38.0724498Z Establishing network if not established already.
+2026-04-02T13:48:38.0725374Z Mounting volumes.
+2026-04-02T13:48:38.0726512Z Nested mountpoint volatile/logs
+2026-04-02T13:48:38.2287625Z Nested mountpoint 
+2026-04-02T13:48:38.7772476Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:48:28, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for doclynk-backend-docker. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-04-02T13:48:38.8148291Z Creating container.
+2026-04-02T13:48:38.8151951Z Creating pipes for streaming container io.
+2026-04-02T13:48:38.8152986Z Creating stdout named pipe at /podr/container/pipe/30827d664db1_doclynk-backend-docker/stdout_9e20b2a568d6458da8faa0ecb2aaeaf0.
+2026-04-02T13:48:38.8155038Z Successfully created stdout named pipe at: /podr/container/pipe/30827d664db1_doclynk-backend-docker/stdout_9e20b2a568d6458da8faa0ecb2aaeaf0.
+2026-04-02T13:48:38.8155800Z Opening named pipe /podr/container/pipe/30827d664db1_doclynk-backend-docker/stdout_9e20b2a568d6458da8faa0ecb2aaeaf0 for reading in non-blocking mode.
+2026-04-02T13:48:38.8156703Z Successfully opened named pipe: /podr/container/pipe/30827d664db1_doclynk-backend-docker/stdout_9e20b2a568d6458da8faa0ecb2aaeaf0.
+2026-04-02T13:48:38.8157457Z Successfully removed non-blocking flag from /podr/container/pipe/30827d664db1_doclynk-backend-docker/stdout_9e20b2a568d6458da8faa0ecb2aaeaf0.
+2026-04-02T13:48:38.8162855Z Creating stderr named pipe at /podr/container/pipe/30827d664db1_doclynk-backend-docker/stderr_5d811a1caf604a44bb2d9c0cf605aeca.
+2026-04-02T13:48:38.8164160Z Successfully created stderr named pipe at: /podr/container/pipe/30827d664db1_doclynk-backend-docker/stderr_5d811a1caf604a44bb2d9c0cf605aeca.
+2026-04-02T13:48:38.8164891Z Opening named pipe /podr/container/pipe/30827d664db1_doclynk-backend-docker/stderr_5d811a1caf604a44bb2d9c0cf605aeca for reading in non-blocking mode.
+2026-04-02T13:48:38.8165727Z Successfully opened named pipe: /podr/container/pipe/30827d664db1_doclynk-backend-docker/stderr_5d811a1caf604a44bb2d9c0cf605aeca.
+2026-04-02T13:48:38.8166456Z Successfully removed non-blocking flag from /podr/container/pipe/30827d664db1_doclynk-backend-docker/stderr_5d811a1caf604a44bb2d9c0cf605aeca.
+2026-04-02T13:48:38.8167356Z Creating container with image: doclynkregistry.azurecr.io/doclynk-backend:latest from registry: doclynkregistry.azurecr.io and fully qualified image name: doclynkregistry.azurecr.io/doclynk-backend:latest
+2026-04-02T13:48:40.3406055Z Starting container: 30827d664db1_doclynk-backend-docker.
+2026-04-02T13:48:40.4653742Z Starting watchers and probes.
+2026-04-02T13:48:40.4677264Z Starting metrics collection.
+2026-04-02T13:48:40.4679657Z Container is running.
+2026-04-02T13:48:40.4680407Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:48:28, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container doclynk-backend-docker successfully created and is running., DetailsLevel: INFO
+2026-04-02T13:48:40.6377993Z Container start method finished after 2920 ms.
+2026-04-02T13:48:40.6379668Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:48:28, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container doclynk-backend-docker successfully created and is running., DetailsLevel: INFO
+2026-04-02T13:48:40.6379879Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:48:28, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-04-02T13:48:56.0642010Z Container has finished running with exit code: 1.
+2026-04-02T13:48:56.0648837Z Container is terminating. Grace period: 5 seconds.
+2026-04-02T13:48:56.0734194Z Stop and delete container. Retry count = 0
+2026-04-02T13:48:56.0740395Z Stopping container: 30827d664db1_doclynk-backend-docker.
+2026-04-02T13:48:56.1922850Z Deleting container: 30827d664db1_doclynk-backend-docker. Retry count = 0
+2026-04-02T13:48:56.4675069Z Container spec TerminationMessagePolicy  path 
+2026-04-02T13:48:56.4683494Z Container is terminated. Total time elapsed: 402 ms.
+2026-04-02T13:48:56.4774003Z Site container: doclynk-backend-docker terminated during site startup.
+2026-04-02T13:48:56.4778158Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:48:28, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: doclynk-backend-docker terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-02T13:48:56.5841512Z Site startup probe failed after 15.8771733 seconds.
+2026-04-02T13:48:56.8812886Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:48:56, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: doclynk-backend-docker terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-02T13:48:56.9368313Z Failed to start site. Revert by stopping site.
+2026-04-02T13:48:56.9376123Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:48:56, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: doclynk-backend-docker terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-02T13:48:56.9390855Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:48:56, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: doclynk-backend-docker terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-02T13:48:56.9391131Z Site: doclynk-backend-docker stopped.
+2026-04-02T13:48:56.9741158Z State: Stopping, Action: UnmountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:48:56, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: doclynk-backend-docker terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-02T13:48:57.5044704Z State: Stopping, Action: StoppingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:48:56, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: doclynk-backend-docker terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-02T13:48:58.0312756Z Site: doclynk-backend-docker will be blocked for 1 minutes till 04/02/2026 13:49:58
+2026-04-02T13:48:58.0313966Z State: Blocked, Action: StoppingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:48:56, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site: doclynk-backend-docker will be blocked for 1 minutes till 04/02/2026 13:49:58, DetailsLevel: WARN
+2026-04-02T13:48:58.0316223Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:48:56, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 04/02/2026 13:48:58 (UTC), DetailsLevel: WARN
+2026-04-02T13:48:58.2680887Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:48:56, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 04/02/2026 13:48:58 (UTC), DetailsLevel: WARN
+2026-04-02T13:49:03.3806197Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:48:56, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:49:58, DetailsLevel: WARN
+2026-04-02T13:49:03.3807400Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:49:08.5291874Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:48:56, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:49:58, DetailsLevel: WARN
+2026-04-02T13:49:08.5292409Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:49:13.6101645Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:48:56, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:49:58, DetailsLevel: WARN
+2026-04-02T13:49:13.6202451Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:49:18.6937452Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:48:56, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:49:58, DetailsLevel: WARN
+2026-04-02T13:49:18.6938026Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:49:23.8296749Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:48:56, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:49:58, DetailsLevel: WARN
+2026-04-02T13:49:23.8311946Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:49:29.1550243Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:48:56, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:49:58, DetailsLevel: WARN
+2026-04-02T13:49:29.1550488Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:49:34.2771579Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:48:56, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:49:58, DetailsLevel: WARN
+2026-04-02T13:49:34.2772100Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:49:39.4408720Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:48:56, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:49:58, DetailsLevel: WARN
+2026-04-02T13:49:39.4410194Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:49:44.5633429Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:48:56, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:49:58, DetailsLevel: WARN
+2026-04-02T13:49:44.5633957Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:49:49.7323264Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:48:56, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:49:58, DetailsLevel: WARN
+2026-04-02T13:49:49.7323908Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:49:54.8364394Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:48:56, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:49:58, DetailsLevel: WARN
+2026-04-02T13:49:54.8364637Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:49:58.0314672Z Site: doclynk-backend-docker is unblocked.
+2026-04-02T13:50:00.0367722Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:48:56, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:49:58, DetailsLevel: WARN
+2026-04-02T13:50:01.7818790Z State: Starting, Action: StartingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:48:56, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:49:58, DetailsLevel: WARN
+2026-04-02T13:50:01.7820393Z Container start method called.
+2026-04-02T13:50:01.7825260Z State: Starting, Action: PullingImage, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:48:56, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pulling image doclynkregistry.azurecr.io/doclynk-backend:latest for doclynk-backend-docker., DetailsLevel: INFO
+2026-04-02T13:50:01.7827009Z Establishing network.
+2026-04-02T13:50:01.7828345Z Pulling image: doclynkregistry.azurecr.io/doclynk-backend:latest.
+2026-04-02T13:50:02.2644668Z Container is starting.
+2026-04-02T13:50:02.2645722Z State: Starting, Action: MountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:48:56, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Mounting volumes for doclynk-backend-docker., DetailsLevel: INFO
+2026-04-02T13:50:02.2841790Z Establishing user namespace if not established already.
+2026-04-02T13:50:02.2921612Z Establishing network if not established already.
+2026-04-02T13:50:02.2923556Z Mounting volumes.
+2026-04-02T13:50:02.2927070Z Nested mountpoint volatile/logs
+2026-04-02T13:50:02.3428436Z Nested mountpoint 
+2026-04-02T13:50:02.4834663Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:48:56, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for doclynk-backend-docker. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-04-02T13:50:02.4838947Z Creating container.
+2026-04-02T13:50:02.4844664Z Creating pipes for streaming container io.
+2026-04-02T13:50:02.4846835Z Creating stdout named pipe at /podr/container/pipe/3a37cb0466be_doclynk-backend-docker/stdout_003e8dcb5862472bbd2fa74cdf8a4a09.
+2026-04-02T13:50:02.4851202Z Successfully created stdout named pipe at: /podr/container/pipe/3a37cb0466be_doclynk-backend-docker/stdout_003e8dcb5862472bbd2fa74cdf8a4a09.
+2026-04-02T13:50:02.5043730Z Opening named pipe /podr/container/pipe/3a37cb0466be_doclynk-backend-docker/stdout_003e8dcb5862472bbd2fa74cdf8a4a09 for reading in non-blocking mode.
+2026-04-02T13:50:02.5051035Z Successfully opened named pipe: /podr/container/pipe/3a37cb0466be_doclynk-backend-docker/stdout_003e8dcb5862472bbd2fa74cdf8a4a09.
+2026-04-02T13:50:02.5052443Z Successfully removed non-blocking flag from /podr/container/pipe/3a37cb0466be_doclynk-backend-docker/stdout_003e8dcb5862472bbd2fa74cdf8a4a09.
+2026-04-02T13:50:02.5054665Z Creating stderr named pipe at /podr/container/pipe/3a37cb0466be_doclynk-backend-docker/stderr_f2acc2971a224cc088e4afe55c579976.
+2026-04-02T13:50:02.5057236Z Successfully created stderr named pipe at: /podr/container/pipe/3a37cb0466be_doclynk-backend-docker/stderr_f2acc2971a224cc088e4afe55c579976.
+2026-04-02T13:50:02.5059866Z Opening named pipe /podr/container/pipe/3a37cb0466be_doclynk-backend-docker/stderr_f2acc2971a224cc088e4afe55c579976 for reading in non-blocking mode.
+2026-04-02T13:50:02.5064097Z Successfully opened named pipe: /podr/container/pipe/3a37cb0466be_doclynk-backend-docker/stderr_f2acc2971a224cc088e4afe55c579976.
+2026-04-02T13:50:02.5819499Z Successfully removed non-blocking flag from /podr/container/pipe/3a37cb0466be_doclynk-backend-docker/stderr_f2acc2971a224cc088e4afe55c579976.
+2026-04-02T13:50:02.5836699Z Creating container with image: doclynkregistry.azurecr.io/doclynk-backend:latest from registry: doclynkregistry.azurecr.io and fully qualified image name: doclynkregistry.azurecr.io/doclynk-backend:latest
+2026-04-02T13:50:03.4914205Z Starting container: 3a37cb0466be_doclynk-backend-docker.
+2026-04-02T13:50:03.5906626Z Starting watchers and probes.
+2026-04-02T13:50:03.5983101Z Starting metrics collection.
+2026-04-02T13:50:03.5998252Z Container is running.
+2026-04-02T13:50:03.6090771Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:48:56, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container doclynk-backend-docker successfully created and is running., DetailsLevel: INFO
+2026-04-02T13:50:03.8773502Z Container start method finished after 2056 ms.
+2026-04-02T13:50:03.8887316Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:48:56, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container doclynk-backend-docker successfully created and is running., DetailsLevel: INFO
+2026-04-02T13:50:03.8890548Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:48:56, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-04-02T13:50:11.7580495Z Container has finished running with exit code: 1.
+2026-04-02T13:50:11.7583671Z Container is terminating. Grace period: 5 seconds.
+2026-04-02T13:50:11.7586464Z Stop and delete container. Retry count = 0
+2026-04-02T13:50:11.7587270Z Stopping container: 3a37cb0466be_doclynk-backend-docker.
+2026-04-02T13:50:11.8181781Z Deleting container: 3a37cb0466be_doclynk-backend-docker. Retry count = 0
+2026-04-02T13:50:12.0376116Z Container spec TerminationMessagePolicy  path 
+2026-04-02T13:50:12.0380836Z Container is terminated. Total time elapsed: 279 ms.
+2026-04-02T13:50:12.0384943Z Site container: doclynk-backend-docker terminated during site startup.
+2026-04-02T13:50:12.0395415Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:48:56, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: doclynk-backend-docker terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-02T13:50:12.1175030Z Site startup probe failed after 8.1995468 seconds.
+2026-04-02T13:50:12.2797686Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:50:12, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: doclynk-backend-docker terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-02T13:50:12.2878159Z Failed to start site. Revert by stopping site.
+2026-04-02T13:50:12.2881168Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:50:12, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: doclynk-backend-docker terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-02T13:50:12.2885736Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:50:12, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: doclynk-backend-docker terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-02T13:50:12.2885892Z Site: doclynk-backend-docker stopped.
+2026-04-02T13:50:12.2998189Z State: Stopping, Action: UnmountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:50:12, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: doclynk-backend-docker terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-02T13:50:12.6757084Z State: Stopping, Action: StoppingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:50:12, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: doclynk-backend-docker terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-02T13:50:12.8414796Z Site: doclynk-backend-docker will be blocked for 1 minutes till 04/02/2026 13:51:12
+2026-04-02T13:50:12.8417267Z State: Blocked, Action: StoppingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:50:12, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site: doclynk-backend-docker will be blocked for 1 minutes till 04/02/2026 13:51:12, DetailsLevel: WARN
+2026-04-02T13:50:12.8505978Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:50:12, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 04/02/2026 13:50:12 (UTC), DetailsLevel: WARN
+2026-04-02T13:50:13.2099552Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:50:12, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 04/02/2026 13:50:12 (UTC), DetailsLevel: WARN
+2026-04-02T13:50:18.3136518Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:50:12, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:51:12, DetailsLevel: WARN
+2026-04-02T13:50:18.3222914Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:50:23.7816175Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:50:12, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:51:12, DetailsLevel: WARN
+2026-04-02T13:50:23.7816991Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:50:28.8698512Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:50:12, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:51:12, DetailsLevel: WARN
+2026-04-02T13:50:28.8698881Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:50:34.0091066Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:50:12, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:51:12, DetailsLevel: WARN
+2026-04-02T13:50:34.0091592Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:50:39.1320331Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:50:12, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:51:12, DetailsLevel: WARN
+2026-04-02T13:50:39.1320614Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:50:44.2858602Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:50:12, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:51:12, DetailsLevel: WARN
+2026-04-02T13:50:44.2860339Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:50:49.4372685Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:50:12, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:51:12, DetailsLevel: WARN
+2026-04-02T13:50:49.4373208Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:50:54.5611849Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:50:12, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:51:12, DetailsLevel: WARN
+2026-04-02T13:50:54.5613762Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:50:59.7538493Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:50:12, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:51:12, DetailsLevel: WARN
+2026-04-02T13:50:59.7540259Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:51:04.8167575Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:50:12, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:51:12, DetailsLevel: WARN
+2026-04-02T13:51:04.8167808Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:51:09.9562152Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:50:12, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:51:12, DetailsLevel: WARN
+2026-04-02T13:51:09.9562421Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:51:12.8413037Z Site: doclynk-backend-docker is unblocked.
+2026-04-02T13:51:15.1186384Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:50:12, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:51:12, DetailsLevel: WARN
+2026-04-02T13:51:16.8817023Z State: Starting, Action: StartingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:50:12, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:51:12, DetailsLevel: WARN
+2026-04-02T13:51:16.8820860Z Container start method called.
+2026-04-02T13:51:16.8821456Z State: Starting, Action: PullingImage, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:50:12, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pulling image doclynkregistry.azurecr.io/doclynk-backend:latest for doclynk-backend-docker., DetailsLevel: INFO
+2026-04-02T13:51:16.8822434Z Establishing network.
+2026-04-02T13:51:16.8823410Z Pulling image: doclynkregistry.azurecr.io/doclynk-backend:latest.
+2026-04-02T13:51:24.1374436Z Image doclynkregistry.azurecr.io/doclynk-backend:latest is pulled from registry doclynkregistry.azurecr.io
+2026-04-02T13:51:24.1381682Z Container is starting.
+2026-04-02T13:51:24.1438999Z State: Starting, Action: MountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:50:12, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Mounting volumes for doclynk-backend-docker., DetailsLevel: INFO
+2026-04-02T13:51:24.1444534Z Establishing user namespace if not established already.
+2026-04-02T13:51:24.1454479Z Establishing network if not established already.
+2026-04-02T13:51:24.1459125Z Mounting volumes.
+2026-04-02T13:51:24.1534733Z Nested mountpoint volatile/logs
+2026-04-02T13:51:24.1815101Z Nested mountpoint 
+2026-04-02T13:51:24.2413626Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:50:12, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for doclynk-backend-docker. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-04-02T13:51:24.3847569Z Creating container.
+2026-04-02T13:51:24.3855732Z Creating pipes for streaming container io.
+2026-04-02T13:51:24.3857774Z Creating stdout named pipe at /podr/container/pipe/375f9166c3e8_doclynk-backend-docker/stdout_15af78d2fbf54cf6ad6f7efa15aa94e0.
+2026-04-02T13:51:24.3865714Z Successfully created stdout named pipe at: /podr/container/pipe/375f9166c3e8_doclynk-backend-docker/stdout_15af78d2fbf54cf6ad6f7efa15aa94e0.
+2026-04-02T13:51:24.3866935Z Opening named pipe /podr/container/pipe/375f9166c3e8_doclynk-backend-docker/stdout_15af78d2fbf54cf6ad6f7efa15aa94e0 for reading in non-blocking mode.
+2026-04-02T13:51:24.3869053Z Successfully opened named pipe: /podr/container/pipe/375f9166c3e8_doclynk-backend-docker/stdout_15af78d2fbf54cf6ad6f7efa15aa94e0.
+2026-04-02T13:51:24.3873186Z Successfully removed non-blocking flag from /podr/container/pipe/375f9166c3e8_doclynk-backend-docker/stdout_15af78d2fbf54cf6ad6f7efa15aa94e0.
+2026-04-02T13:51:24.3945533Z Creating stderr named pipe at /podr/container/pipe/375f9166c3e8_doclynk-backend-docker/stderr_ced3af75d9fb4d0d87454de3bcd0547b.
+2026-04-02T13:51:24.3952325Z Successfully created stderr named pipe at: /podr/container/pipe/375f9166c3e8_doclynk-backend-docker/stderr_ced3af75d9fb4d0d87454de3bcd0547b.
+2026-04-02T13:51:24.3954028Z Opening named pipe /podr/container/pipe/375f9166c3e8_doclynk-backend-docker/stderr_ced3af75d9fb4d0d87454de3bcd0547b for reading in non-blocking mode.
+2026-04-02T13:51:24.3955935Z Successfully opened named pipe: /podr/container/pipe/375f9166c3e8_doclynk-backend-docker/stderr_ced3af75d9fb4d0d87454de3bcd0547b.
+2026-04-02T13:51:24.3958495Z Successfully removed non-blocking flag from /podr/container/pipe/375f9166c3e8_doclynk-backend-docker/stderr_ced3af75d9fb4d0d87454de3bcd0547b.
+2026-04-02T13:51:24.3960514Z Creating container with image: doclynkregistry.azurecr.io/doclynk-backend:latest from registry: doclynkregistry.azurecr.io and fully qualified image name: doclynkregistry.azurecr.io/doclynk-backend:latest
+2026-04-02T13:51:24.9196476Z Starting container: 375f9166c3e8_doclynk-backend-docker.
+2026-04-02T13:51:25.0162326Z Starting watchers and probes.
+2026-04-02T13:51:25.0247447Z Starting metrics collection.
+2026-04-02T13:51:25.0252456Z Container is running.
+2026-04-02T13:51:25.0253767Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:50:12, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container doclynk-backend-docker successfully created and is running., DetailsLevel: INFO
+2026-04-02T13:51:25.0744314Z Container start method finished after 8192 ms.
+2026-04-02T13:51:25.0745918Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:50:12, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container doclynk-backend-docker successfully created and is running., DetailsLevel: INFO
+2026-04-02T13:51:25.0746214Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:50:12, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-04-02T13:51:34.3099412Z Container has finished running with exit code: 1.
+2026-04-02T13:51:34.3108649Z Container is terminating. Grace period: 5 seconds.
+2026-04-02T13:51:34.3116176Z Stop and delete container. Retry count = 0
+2026-04-02T13:51:34.3184616Z Stopping container: 375f9166c3e8_doclynk-backend-docker.
+2026-04-02T13:51:34.3874292Z Deleting container: 375f9166c3e8_doclynk-backend-docker. Retry count = 0
+2026-04-02T13:51:34.7515868Z Container spec TerminationMessagePolicy  path 
+2026-04-02T13:51:34.7525491Z Container is terminated. Total time elapsed: 440 ms.
+2026-04-02T13:51:34.7531663Z Site container: doclynk-backend-docker terminated during site startup.
+2026-04-02T13:51:34.7599480Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:50:12, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: doclynk-backend-docker terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-02T13:51:34.7709254Z Site startup probe failed after 9.639436 seconds.
+2026-04-02T13:51:35.0306433Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:51:35, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: doclynk-backend-docker terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-02T13:51:35.0732935Z Failed to start site. Revert by stopping site.
+2026-04-02T13:51:35.0813084Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:51:35, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: doclynk-backend-docker terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-02T13:51:35.0816336Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:51:35, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: doclynk-backend-docker terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-02T13:51:35.0816458Z Site: doclynk-backend-docker stopped.
+2026-04-02T13:51:35.1006847Z State: Stopping, Action: UnmountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:51:35, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: doclynk-backend-docker terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-02T13:51:35.4554866Z State: Stopping, Action: StoppingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:51:35, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: doclynk-backend-docker terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-02T13:51:35.6081426Z Site: doclynk-backend-docker will be blocked for 2 minutes till 04/02/2026 13:53:35
+2026-04-02T13:51:35.6083593Z State: Blocked, Action: StoppingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:51:35, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site: doclynk-backend-docker will be blocked for 2 minutes till 04/02/2026 13:53:35, DetailsLevel: WARN
+2026-04-02T13:51:35.6869576Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:51:35, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 04/02/2026 13:51:35 (UTC), DetailsLevel: WARN
+2026-04-02T13:51:36.0973899Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:51:35, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 04/02/2026 13:51:35 (UTC), DetailsLevel: WARN
+2026-04-02T13:51:36.3276148Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:51:35, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:53:35, DetailsLevel: WARN
+2026-04-02T13:51:36.3276378Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:51:37.7482990Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:51:35, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:53:35, DetailsLevel: WARN
+2026-04-02T13:51:37.7483578Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:51:37.8762215Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:51:35, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:53:35, DetailsLevel: WARN
+2026-04-02T13:51:37.8762457Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:53:02.8318691Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:51:35, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:53:35, DetailsLevel: WARN
+2026-04-02T13:53:02.8320010Z Start site prohibitted because the site is being blocked.
+2026-04-02T13:53:35.6116877Z Site: doclynk-backend-docker is unblocked.
+2026-04-02T13:57:53.8883233Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:51:35, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:53:35, DetailsLevel: WARN
+2026-04-02T13:57:55.8527863Z State: Starting, Action: StartingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:51:35, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 13:53:35, DetailsLevel: WARN
+2026-04-02T13:57:55.8712953Z Container start method called.
+2026-04-02T13:57:55.8713923Z State: Starting, Action: PullingImage, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:51:35, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pulling image doclynkregistry.azurecr.io/doclynk-backend:latest for doclynk-backend-docker., DetailsLevel: INFO
+2026-04-02T13:57:55.8714945Z Establishing network.
+2026-04-02T13:57:55.8716148Z Pulling image: doclynkregistry.azurecr.io/doclynk-backend:latest.
+2026-04-02T13:57:56.2047175Z Container is starting.
+2026-04-02T13:57:56.2048590Z State: Starting, Action: MountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:51:35, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Mounting volumes for doclynk-backend-docker., DetailsLevel: INFO
+2026-04-02T13:57:56.2051567Z Establishing user namespace if not established already.
+2026-04-02T13:57:56.2053643Z Establishing network if not established already.
+2026-04-02T13:57:56.2055488Z Mounting volumes.
+2026-04-02T13:57:56.2066359Z Nested mountpoint volatile/logs
+2026-04-02T13:57:56.2654678Z Nested mountpoint 
+2026-04-02T13:57:56.4279869Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:51:35, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for doclynk-backend-docker. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-04-02T13:57:56.4818114Z Creating container.
+2026-04-02T13:57:56.4820284Z Creating pipes for streaming container io.
+2026-04-02T13:57:56.4821312Z Creating stdout named pipe at /podr/container/pipe/aaad27235ec2_doclynk-backend-docker/stdout_4854ad6aaa144daf9670734ac7dcd6e9.
+2026-04-02T13:57:56.4823516Z Successfully created stdout named pipe at: /podr/container/pipe/aaad27235ec2_doclynk-backend-docker/stdout_4854ad6aaa144daf9670734ac7dcd6e9.
+2026-04-02T13:57:56.4824330Z Opening named pipe /podr/container/pipe/aaad27235ec2_doclynk-backend-docker/stdout_4854ad6aaa144daf9670734ac7dcd6e9 for reading in non-blocking mode.
+2026-04-02T13:57:56.4825281Z Successfully opened named pipe: /podr/container/pipe/aaad27235ec2_doclynk-backend-docker/stdout_4854ad6aaa144daf9670734ac7dcd6e9.
+2026-04-02T13:57:56.4825987Z Successfully removed non-blocking flag from /podr/container/pipe/aaad27235ec2_doclynk-backend-docker/stdout_4854ad6aaa144daf9670734ac7dcd6e9.
+2026-04-02T13:57:56.5026368Z Creating stderr named pipe at /podr/container/pipe/aaad27235ec2_doclynk-backend-docker/stderr_1e57abc7f21b499291a754febfa25f3e.
+2026-04-02T13:57:56.5028378Z Successfully created stderr named pipe at: /podr/container/pipe/aaad27235ec2_doclynk-backend-docker/stderr_1e57abc7f21b499291a754febfa25f3e.
+2026-04-02T13:57:56.5029187Z Opening named pipe /podr/container/pipe/aaad27235ec2_doclynk-backend-docker/stderr_1e57abc7f21b499291a754febfa25f3e for reading in non-blocking mode.
+2026-04-02T13:57:56.5030089Z Successfully opened named pipe: /podr/container/pipe/aaad27235ec2_doclynk-backend-docker/stderr_1e57abc7f21b499291a754febfa25f3e.
+2026-04-02T13:57:56.5030785Z Successfully removed non-blocking flag from /podr/container/pipe/aaad27235ec2_doclynk-backend-docker/stderr_1e57abc7f21b499291a754febfa25f3e.
+2026-04-02T13:57:56.5031806Z Creating container with image: doclynkregistry.azurecr.io/doclynk-backend:latest from registry: doclynkregistry.azurecr.io and fully qualified image name: doclynkregistry.azurecr.io/doclynk-backend:latest
+2026-04-02T13:57:57.3849973Z Starting container: aaad27235ec2_doclynk-backend-docker.
+2026-04-02T13:57:57.4636527Z Starting watchers and probes.
+2026-04-02T13:57:57.4821238Z Starting metrics collection.
+2026-04-02T13:57:57.4829444Z Container is running.
+2026-04-02T13:57:57.4830265Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:51:35, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container doclynk-backend-docker successfully created and is running., DetailsLevel: INFO
+2026-04-02T13:57:57.6514819Z Container start method finished after 1779 ms.
+2026-04-02T13:57:57.6516461Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:51:35, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container doclynk-backend-docker successfully created and is running., DetailsLevel: INFO
+2026-04-02T13:57:57.6516666Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:51:35, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-04-02T13:58:07.2319162Z Container has finished running with exit code: 1.
+2026-04-02T13:58:07.2322413Z Container is terminating. Grace period: 5 seconds.
+2026-04-02T13:58:07.2326345Z Stop and delete container. Retry count = 0
+2026-04-02T13:58:07.2425672Z Stopping container: aaad27235ec2_doclynk-backend-docker.
+2026-04-02T13:58:07.3420141Z Deleting container: aaad27235ec2_doclynk-backend-docker. Retry count = 0
+2026-04-02T13:58:07.6343330Z Container spec TerminationMessagePolicy  path 
+2026-04-02T13:58:07.6352252Z Container is terminated. Total time elapsed: 402 ms.
+2026-04-02T13:58:07.6358135Z Site container: doclynk-backend-docker terminated during site startup.
+2026-04-02T13:58:07.6360292Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:51:35, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: doclynk-backend-docker terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-02T13:58:07.6638316Z Site startup probe failed after 10.0107698 seconds.
+2026-04-02T13:58:08.0228853Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:58:08, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: doclynk-backend-docker terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-02T13:58:08.0256051Z Failed to start site. Revert by stopping site.
+2026-04-02T13:58:08.0424041Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:58:08, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: doclynk-backend-docker terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-02T13:58:08.0440523Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:58:08, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: doclynk-backend-docker terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-02T13:58:08.0441934Z Site: doclynk-backend-docker stopped.
+2026-04-02T13:58:08.0707279Z State: Stopping, Action: UnmountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:58:08, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: doclynk-backend-docker terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-02T13:58:08.3897426Z State: Stopping, Action: StoppingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:58:08, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: doclynk-backend-docker terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-02T13:58:08.7448597Z Site: doclynk-backend-docker will be blocked for 2 minutes till 04/02/2026 14:00:08
+2026-04-02T13:58:08.7451061Z State: Blocked, Action: StoppingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:58:08, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site: doclynk-backend-docker will be blocked for 2 minutes till 04/02/2026 14:00:08, DetailsLevel: WARN
+2026-04-02T13:58:08.7456097Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:58:08, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 04/02/2026 13:58:08 (UTC), DetailsLevel: WARN
+2026-04-02T13:58:09.2339220Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:58:08, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 04/02/2026 13:58:08 (UTC), DetailsLevel: WARN
+2026-04-02T13:58:10.7725218Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:58:08, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 14:00:08, DetailsLevel: WARN
+2026-04-02T13:58:10.7725770Z Start site prohibitted because the site is being blocked.
+2026-04-02T14:00:08.7458459Z Site: doclynk-backend-docker is unblocked.
+2026-04-02T14:01:46.6897759Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:58:08, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 14:00:08, DetailsLevel: WARN
+2026-04-02T14:01:48.4619337Z State: Starting, Action: StartingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:58:08, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/02/2026 14:00:08, DetailsLevel: WARN
+2026-04-02T14:01:48.4624879Z Container start method called.
+2026-04-02T14:01:48.4631222Z State: Starting, Action: PullingImage, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:58:08, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pulling image doclynkregistry.azurecr.io/doclynk-backend:latest for doclynk-backend-docker., DetailsLevel: INFO
+2026-04-02T14:01:48.4786209Z Establishing network.
+2026-04-02T14:01:48.4794863Z Pulling image: doclynkregistry.azurecr.io/doclynk-backend:latest.
+2026-04-02T14:01:54.6414081Z Image doclynkregistry.azurecr.io/doclynk-backend:latest is pulled from registry doclynkregistry.azurecr.io
+2026-04-02T14:01:54.6418989Z Container is starting.
+2026-04-02T14:01:54.6426745Z State: Starting, Action: MountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:58:08, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Mounting volumes for doclynk-backend-docker., DetailsLevel: INFO
+2026-04-02T14:01:54.6430796Z Establishing user namespace if not established already.
+2026-04-02T14:01:54.6434812Z Establishing network if not established already.
+2026-04-02T14:01:54.6438750Z Mounting volumes.
+2026-04-02T14:01:54.6512628Z Nested mountpoint volatile/logs
+2026-04-02T14:01:54.6632769Z Nested mountpoint 
+2026-04-02T14:01:54.7944411Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:58:08, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for doclynk-backend-docker. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-04-02T14:01:54.7945514Z Creating container.
+2026-04-02T14:01:54.7946294Z Creating pipes for streaming container io.
+2026-04-02T14:01:54.7947028Z Creating stdout named pipe at /podr/container/pipe/c98498700a0f_doclynk-backend-docker/stdout_28e22065968f4ff8b71d67188f66f98f.
+2026-04-02T14:01:54.8043327Z Successfully created stdout named pipe at: /podr/container/pipe/c98498700a0f_doclynk-backend-docker/stdout_28e22065968f4ff8b71d67188f66f98f.
+2026-04-02T14:01:54.8044753Z Opening named pipe /podr/container/pipe/c98498700a0f_doclynk-backend-docker/stdout_28e22065968f4ff8b71d67188f66f98f for reading in non-blocking mode.
+2026-04-02T14:01:54.8052599Z Successfully opened named pipe: /podr/container/pipe/c98498700a0f_doclynk-backend-docker/stdout_28e22065968f4ff8b71d67188f66f98f.
+2026-04-02T14:01:54.8054389Z Successfully removed non-blocking flag from /podr/container/pipe/c98498700a0f_doclynk-backend-docker/stdout_28e22065968f4ff8b71d67188f66f98f.
+2026-04-02T14:01:54.8058367Z Creating stderr named pipe at /podr/container/pipe/c98498700a0f_doclynk-backend-docker/stderr_e31eed0c030b4722a16a1a14e8db247d.
+2026-04-02T14:01:54.8060454Z Successfully created stderr named pipe at: /podr/container/pipe/c98498700a0f_doclynk-backend-docker/stderr_e31eed0c030b4722a16a1a14e8db247d.
+2026-04-02T14:01:54.8061519Z Opening named pipe /podr/container/pipe/c98498700a0f_doclynk-backend-docker/stderr_e31eed0c030b4722a16a1a14e8db247d for reading in non-blocking mode.
+2026-04-02T14:01:54.8062767Z Successfully opened named pipe: /podr/container/pipe/c98498700a0f_doclynk-backend-docker/stderr_e31eed0c030b4722a16a1a14e8db247d.
+2026-04-02T14:01:54.8063783Z Successfully removed non-blocking flag from /podr/container/pipe/c98498700a0f_doclynk-backend-docker/stderr_e31eed0c030b4722a16a1a14e8db247d.
+2026-04-02T14:01:54.8437444Z Creating container with image: doclynkregistry.azurecr.io/doclynk-backend:latest from registry: doclynkregistry.azurecr.io and fully qualified image name: doclynkregistry.azurecr.io/doclynk-backend:latest
+2026-04-02T14:01:55.4067383Z Starting container: c98498700a0f_doclynk-backend-docker.
+2026-04-02T14:01:55.4853208Z Starting watchers and probes.
+2026-04-02T14:01:55.4951674Z Starting metrics collection.
+2026-04-02T14:01:55.5038981Z Container is running.
+2026-04-02T14:01:55.5040470Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:58:08, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container doclynk-backend-docker successfully created and is running., DetailsLevel: INFO
+2026-04-02T14:01:55.6191471Z Container start method finished after 7156 ms.
+2026-04-02T14:01:55.9471495Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:58:08, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container doclynk-backend-docker successfully created and is running., DetailsLevel: INFO
+2026-04-02T14:01:55.9620289Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:58:08, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-04-02T14:02:10.7791955Z Container has finished running with exit code: 1.
+2026-04-02T14:02:10.7793095Z Container is terminating. Grace period: 5 seconds.
+2026-04-02T14:02:10.7805574Z Stop and delete container. Retry count = 0
+2026-04-02T14:02:10.7806630Z Stopping container: c98498700a0f_doclynk-backend-docker.
+2026-04-02T14:02:10.8615212Z Deleting container: c98498700a0f_doclynk-backend-docker. Retry count = 0
+2026-04-02T14:02:11.1698193Z Container spec TerminationMessagePolicy  path 
+2026-04-02T14:02:11.1891261Z Container is terminated. Total time elapsed: 390 ms.
+2026-04-02T14:02:11.1908124Z Site container: doclynk-backend-docker terminated during site startup.
+2026-04-02T14:02:11.1975489Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 13:58:08, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: doclynk-backend-docker terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-02T14:02:11.2718614Z Site startup probe failed after 15.3044543 seconds.
+2026-04-02T14:02:11.6314331Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 14:02:11, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: doclynk-backend-docker terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-02T14:02:11.6598256Z Failed to start site. Revert by stopping site.
+2026-04-02T14:02:11.6603131Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 14:02:11, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: doclynk-backend-docker terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-02T14:02:11.6606432Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 14:02:11, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: doclynk-backend-docker terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-02T14:02:11.6606585Z Site: doclynk-backend-docker stopped.
+2026-04-02T14:02:11.6697842Z State: Stopping, Action: UnmountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 14:02:11, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: doclynk-backend-docker terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-02T14:02:12.1258375Z State: Stopping, Action: StoppingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 14:02:11, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: doclynk-backend-docker terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-02T14:02:12.6453863Z Site: doclynk-backend-docker will be blocked for 2 minutes till 04/02/2026 14:04:12
+2026-04-02T14:02:12.6455825Z State: Blocked, Action: StoppingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 14:02:11, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site: doclynk-backend-docker will be blocked for 2 minutes till 04/02/2026 14:04:12, DetailsLevel: WARN
+2026-04-02T14:02:12.6459070Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 14:02:11, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 04/02/2026 14:02:12 (UTC), DetailsLevel: WARN
+2026-04-02T14:02:13.2850479Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 14:02:11, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 04/02/2026 14:02:12 (UTC), DetailsLevel: WARN
+2026-04-02T14:04:12.6455028Z Site: doclynk-backend-docker is unblocked.
+2026-04-02T14:04:20.7582906Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 14:02:11, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 04/02/2026 14:02:12 (UTC), DetailsLevel: WARN
+2026-04-02T14:04:23.4883824Z State: Starting, Action: StartingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 14:02:11, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 04/02/2026 14:02:12 (UTC), DetailsLevel: WARN
+2026-04-02T14:04:23.4884895Z Container start method called.
+2026-04-02T14:04:23.4885264Z State: Starting, Action: PullingImage, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 14:02:11, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pulling image doclynkregistry.azurecr.io/doclynk-backend:latest for doclynk-backend-docker., DetailsLevel: INFO
+2026-04-02T14:04:23.4975089Z Establishing network.
+2026-04-02T14:04:23.5391793Z Pulling image: doclynkregistry.azurecr.io/doclynk-backend:latest.
+2026-04-02T14:04:25.3324793Z Container is starting.
+2026-04-02T14:04:25.3325638Z State: Starting, Action: MountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 14:02:11, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Mounting volumes for doclynk-backend-docker., DetailsLevel: INFO
+2026-04-02T14:04:25.3326496Z Establishing user namespace if not established already.
+2026-04-02T14:04:25.3327271Z Establishing network if not established already.
+2026-04-02T14:04:25.3347045Z Mounting volumes.
+2026-04-02T14:04:25.3352270Z Nested mountpoint volatile/logs
+2026-04-02T14:04:25.3552840Z Nested mountpoint 
+2026-04-02T14:04:25.4386232Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 14:02:11, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for doclynk-backend-docker. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-04-02T14:04:25.4387227Z Creating container.
+2026-04-02T14:04:25.4388040Z Creating pipes for streaming container io.
+2026-04-02T14:04:25.4388821Z Creating stdout named pipe at /podr/container/pipe/dd7e791cf504_doclynk-backend-docker/stdout_b98d7d39f2bd453f831c18c164a8374d.
+2026-04-02T14:04:25.4390661Z Successfully created stdout named pipe at: /podr/container/pipe/dd7e791cf504_doclynk-backend-docker/stdout_b98d7d39f2bd453f831c18c164a8374d.
+2026-04-02T14:04:25.4391499Z Opening named pipe /podr/container/pipe/dd7e791cf504_doclynk-backend-docker/stdout_b98d7d39f2bd453f831c18c164a8374d for reading in non-blocking mode.
+2026-04-02T14:04:25.4392437Z Successfully opened named pipe: /podr/container/pipe/dd7e791cf504_doclynk-backend-docker/stdout_b98d7d39f2bd453f831c18c164a8374d.
+2026-04-02T14:04:25.4393135Z Successfully removed non-blocking flag from /podr/container/pipe/dd7e791cf504_doclynk-backend-docker/stdout_b98d7d39f2bd453f831c18c164a8374d.
+2026-04-02T14:04:25.4643125Z Creating stderr named pipe at /podr/container/pipe/dd7e791cf504_doclynk-backend-docker/stderr_ec9f6e8d526749c6a92e2ca641d05eee.
+2026-04-02T14:04:25.4644927Z Successfully created stderr named pipe at: /podr/container/pipe/dd7e791cf504_doclynk-backend-docker/stderr_ec9f6e8d526749c6a92e2ca641d05eee.
+2026-04-02T14:04:25.4645660Z Opening named pipe /podr/container/pipe/dd7e791cf504_doclynk-backend-docker/stderr_ec9f6e8d526749c6a92e2ca641d05eee for reading in non-blocking mode.
+2026-04-02T14:04:25.4646610Z Successfully opened named pipe: /podr/container/pipe/dd7e791cf504_doclynk-backend-docker/stderr_ec9f6e8d526749c6a92e2ca641d05eee.
+2026-04-02T14:04:25.4647337Z Successfully removed non-blocking flag from /podr/container/pipe/dd7e791cf504_doclynk-backend-docker/stderr_ec9f6e8d526749c6a92e2ca641d05eee.
+2026-04-02T14:04:25.4849286Z Creating container with image: doclynkregistry.azurecr.io/doclynk-backend:latest from registry: doclynkregistry.azurecr.io and fully qualified image name: doclynkregistry.azurecr.io/doclynk-backend:latest
+2026-04-02T14:04:26.1806373Z Starting container: dd7e791cf504_doclynk-backend-docker.
+2026-04-02T14:04:26.2845496Z Starting watchers and probes.
+2026-04-02T14:04:26.3024432Z Starting metrics collection.
+2026-04-02T14:04:26.3112614Z Container is running.
+2026-04-02T14:04:26.3120542Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 14:02:11, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container doclynk-backend-docker successfully created and is running., DetailsLevel: INFO
+2026-04-02T14:04:26.4297083Z Container start method finished after 2940 ms.
+2026-04-02T14:04:26.4381709Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 14:02:11, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container doclynk-backend-docker successfully created and is running., DetailsLevel: INFO
+2026-04-02T14:04:26.4382452Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 14:02:11, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-04-02T14:04:33.2840223Z Container has finished running with exit code: 1.
+2026-04-02T14:04:33.2843427Z Container is terminating. Grace period: 5 seconds.
+2026-04-02T14:04:33.2852502Z Stop and delete container. Retry count = 0
+2026-04-02T14:04:33.2853335Z Stopping container: dd7e791cf504_doclynk-backend-docker.
+2026-04-02T14:04:33.3703239Z Deleting container: dd7e791cf504_doclynk-backend-docker. Retry count = 0
+2026-04-02T14:04:33.5785416Z Container spec TerminationMessagePolicy  path 
+2026-04-02T14:04:33.5805804Z Container is terminated. Total time elapsed: 294 ms.
+2026-04-02T14:04:33.6063471Z Site container: doclynk-backend-docker terminated during site startup.
+2026-04-02T14:04:33.6070738Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 14:02:11, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: doclynk-backend-docker terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-02T14:04:33.7052822Z Site startup probe failed after 7.2664946 seconds.
+2026-04-02T14:04:33.9476248Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 14:04:33, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: doclynk-backend-docker terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-02T14:04:33.9578516Z Failed to start site. Revert by stopping site.
+2026-04-02T14:04:33.9581541Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 14:04:33, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: doclynk-backend-docker terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-02T14:04:34.0332908Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 04/02/2026 14:04:33, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: doclynk-backend-docker terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-02T14:04:34.0333204Z Site: doclynk-backend-docker stopped.

@@ -1,7 +1,9 @@
 import os
 import logging
 from pathlib import Path
+import urllib.parse
 from urllib.parse import quote_plus
+import certifi
 
 from dotenv import load_dotenv
 from sqlalchemy import create_engine
@@ -26,7 +28,7 @@ def _build_database_url() -> str:
     ssl_mode = os.getenv("DB_SSL_MODE", "require").lower()
     if ssl_mode != "disable":
         ca_path = os.getenv("DB_SSL_CA") or certifi.where()
-        ca_path_encoded = urllib.parse.quote_plus(ca_path)
+        ca_path_encoded = quote_plus(ca_path)
         url += f"?ssl_ca={ca_path_encoded}"
         
     return url
