@@ -23,7 +23,9 @@ def _build_database_url() -> str:
     password = os.getenv("DB_PASSWORD", "secret")
     port = os.getenv("DB_PORT", "3306")
     
-    url = f"mysql+pymysql://{user}:{password}@{host}:{port}/{name}"
+    user_encoded = quote_plus(user)
+    password_encoded = quote_plus(password)
+    url = f"mysql+pymysql://{user_encoded}:{password_encoded}@{host}:{port}/{name}"
     
     ssl_mode = os.getenv("DB_SSL_MODE", "require").lower()
     if ssl_mode != "disable":
