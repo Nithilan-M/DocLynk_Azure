@@ -1,0 +1,54 @@
+# ──────────────────────────────────────────────────────────────
+# DocLynk Azure – Terraform Variables Template
+# ──────────────────────────────────────────────────────────────
+# Copy this file to terraform.tfvars and fill in your values:
+#   Copy-Item terraform.tfvars.example terraform.tfvars
+#
+# terraform.tfvars is git-ignored and will NOT be committed.
+# ──────────────────────────────────────────────────────────────
+
+# ── Azure Subscription ──────────────────────────────────────
+subscription_id = "<your-azure-subscription-id>"
+
+# ── General ─────────────────────────────────────────────────
+# project_name        = "doclynk"
+# location            = "centralindia"
+# environment         = "prod"
+# resource_group_name = "doclynk-rg"
+
+# ── MySQL ───────────────────────────────────────────────────
+# mysql_server_name       = "doclynk-db"
+# mysql_admin_username    = "docadmin"
+mysql_admin_password      = "<your-mysql-password>"
+# mysql_database_name     = "doclynkdb"
+# mysql_sku_name          = "B_Standard_B1ms"
+# mysql_version           = "8.0.21"
+# mysql_storage_gb        = 20
+
+# ── Container Registry ──────────────────────────────────────
+# acr_name = "doclynkregistry"
+# acr_sku  = "Basic"
+
+# ── App Service (Backend) ───────────────────────────────────
+# app_service_plan_name = "doclynk-backend-plan"
+# app_service_sku       = "B1"
+# backend_app_name      = "doclynk-backend-docker"
+
+# ── Static Web App (Frontend) ──────────────────────────────
+# static_web_app_name     = "doclynk-frontend"
+# static_web_app_sku_tier = "Free"
+# static_web_app_sku_size = "Free"
+
+# ── Application Secrets ─────────────────────────────────────
+jwt_secret_key = "<your-64-char-hex-secret>"
+otp_secret_key = "<your-64-char-hex-secret>"
+resend_api_key = "<your-resend-api-key>"
+# resend_from_email = "MediCare <noreply@doclynk.nithilan.tech>"
+
+# ── CORS (leave empty to auto-generate from SWA + localhost) ─
+# frontend_origins = ""
+
+# ── Monitoring (Grafana + Log Analytics) ─────────────────────
+# enable_monitoring  = true    # set false to skip Grafana + diagnostics
+# grafana_sku        = "Standard"
+# log_retention_days = 30

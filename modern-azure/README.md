@@ -230,6 +230,85 @@ Ensure backend `FRONTEND_ORIGINS` includes:
   - `DOCKERHUB_USERNAME`
   - `DOCKERHUB_TOKEN`
 
+## Terraform (Infrastructure as Code)
+
+All Azure infrastructure is defined in `infra/terraform/`. Use Terraform to provision, update, or tear down the full environment reproducibly.
+
+### Prerequisites
+
+- [Terraform](https://developer.hashicorp.com/terraform/install) ≥ 1.5
+- [Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli) logged in (`az login`)
+
+### Quick Start
+
+```bash
+cd modern-azure/infra/terraform
+
+# 1. Copy the variables template and fill in your secrets
+Copy-Item terraform.tfvars.example terraform.tfvars
+# Edit terraform.tfvars with your passwords, API keys, subscription ID, etc.
+
+# 2. Initialize providers
+terraform init
+
+# 3. Preview what will be created
+terraform plan
+
+# 4. Apply (creates all Azure resources)
+terraform apply
+```
+
+### Resources Provisioned
+
+| Resource | Terraform Name | Default Azure Name |
+|---|---|---|
+| Resource Group | `azurerm_resource_group.main` | `doclynk-rg` |
+| MySQL Flexible Server | `azurerm_mysql_flexible_server.main` | `doclynk-db` |
+| MySQL Database | `azurerm_mysql_flexible_database.app` | `doclynkdb` |
+| Container Registry | `azurerm_container_registry.main` | `doclynkregistry` |
+| App Service Plan | `azurerm_service_plan.backend` | `doclynk-backend-plan` |
+| Backend Web App | `azurerm_linux_web_app.backend` | `doclynk-backend-docker` |
+| Static Web App | `azurerm_static_web_app.frontend` | `doclynk-frontend` |
+| Log Analytics *(optional)* | `azurerm_log_analytics_workspace.main` | `doclynk-logs` |
+
+### Importing Existing Resources
+
+If you already have these resources in Azure, import them into Terraform state instead of recreating:
+
+```bash
+# Example: import resource group
+terraform import azurerm_resource_group.main /subscriptions/<sub-id>/resourceGroups/doclynk-rg
+
+# Example: import MySQL server
+terraform import azurerm_mysql_flexible_server.main /subscriptions/<sub-id>/resourceGroups/doclynk-rg/providers/Microsoft.DBforMySQL/flexibleServers/doclynk-db
+
+# Example: import ACR
+terraform import azurerm_container_registry.main /subscriptions/<sub-id>/resourceGroups/doclynk-rg/providers/Microsoft.ContainerRegistry/registries/doclynkregistry
+```
+
+### Key Outputs
+
+After `terraform apply`, useful values are printed:
+
+```bash
+terraform output mysql_fqdn          # MySQL connection host
+terraform output acr_login_server    # ACR URL for docker push
+terraform output backend_url         # Backend App Service URL
+terraform output frontend_url        # Frontend Static Web App URL
+terraform output -raw frontend_api_token  # SWA deploy token for CI
+```
+
+### File Structure
+
+```text
+infra/terraform/
+├── providers.tf             # Terraform & AzureRM provider config
+├── variables.tf             # All input variables with defaults
+├── main.tf                  # Resource definitions
+├── outputs.tf               # Exported values
+└── terraform.tfvars.example # Secrets template (copy → terraform.tfvars)
+```
+
 ## API Endpoints
 - `POST /auth/register`
 - `POST /auth/login`

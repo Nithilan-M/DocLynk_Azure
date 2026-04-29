@@ -1,2 +1,8 @@
-
 modern-azure/logs/
+webapp_logs*/
+*.zip
+*_keys.txt
+*_settings.json
+.vscode/
+.azure/
+modern-azure/backend/.azure/

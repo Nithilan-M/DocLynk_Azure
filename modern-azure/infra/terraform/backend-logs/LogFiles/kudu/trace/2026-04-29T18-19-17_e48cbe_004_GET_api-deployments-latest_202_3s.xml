@@ -1,0 +1,8 @@
+<step title="Incoming Request" date="2026-04-29T18:19:17.768" instance="e48cbe" url="/api/deployments/latest" method="GET" type="request" pid="841,1,18" Accept="*/*" Host="doclynk-backend-docker.scm.azurewebsites.net" User-Agent="AZURECLI/2.84.0 (MSI)" Accept-Encoding="gzip, deflate" Authorization="Bas..." x-ms-client-request-id="ed51c3f5-43f7-11f1-b166-bcfce7d0fb9e" X-ARR-LOG-ID="ed51c3f5-43f7-11f1-b166-bcfce7d0fb9e" CLIENT-IP="157.51.126.138:60678" X-SITE-DEPLOYMENT-ID="doclynk-backend-docker" WAS-DEFAULT-HOSTNAME="doclynk-backend-docker.scm.azurewebsites.net" X-Forwarded-Proto="https" X-AppService-Proto="https" X-Forwarded-TlsVersion="1.3" X-WAWS-Unencoded-URL="/api/deployments/latest" X-Client-IP="157.51.126.138" X-Client-Port="60678" >
+  <step title="DeploymentService.GetResult" date="2026-04-29T18:19:19.233" >
+    <step title="DeploymentService.GetLatestDeployment" date="2026-04-29T18:19:19.274" >
+      <step title="DeploymentManager.GetResults" date="2026-04-29T18:19:19.283" /><!-- duration: 711ms -->
+    </step><!-- duration: 1039ms -->
+  </step><!-- duration: 1132ms -->
+  <step title="Outgoing response" date="2026-04-29T18:19:21.031" type="response" statusCode="202" statusText="Accepted" /><!-- duration: 62ms -->
+</step><!-- duration: 3403ms -->

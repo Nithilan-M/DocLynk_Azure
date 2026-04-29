@@ -1,0 +1,178 @@
+# Pre-commit hooks configuration
+# See https://pre-commit.com for more information
+# Installation:
+#   pip install pre-commit
+#   pre-commit install
+#
+# Manual run:
+#   pre-commit run --all-files
+
+repos:
+  # ──────────────────────────────────────────────────────────
+  # Terraform
+  # ──────────────────────────────────────────────────────────
+
+  - repo: https://github.com/terraform-docs/terraform-docs
+    rev: "v0.16.0"
+    hooks:
+      - id: terraform-docs-go
+        name: Terraform docs
+        description: Generate Terraform documentation from code
+        entry: terraform-docs -c .terraform-docs.yml
+        language: golang
+        files: ^modern-azure/infra/terraform/
+        types: [terraform]
+        require_serial: true
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+      - id: trailing-whitespace
+        name: Trim trailing whitespace
+        description: Removes trailing whitespace
+        types: [text]
+
+      - id: end-of-file-fixer
+        name: Fix end of file
+        description: Ensures files end with newline
+        types: [text]
+
+      - id: check-yaml
+        name: Check YAML
+        description: Validates YAML syntax
+        types: [yaml]
+        exclude: ^modern-azure/infra/terraform/
+
+      - id: check-json
+        name: Check JSON
+        description: Validates JSON syntax
+        types: [json]
+
+      - id: check-merge-conflict
+        name: Check for merge conflicts
+        description: Prevents committing with merge conflict markers
+
+      - id: detect-private-key
+        name: Detect private keys
+        description: Prevents committing private keys
+        types: [text]
+
+  # ──────────────────────────────────────────────────────────
+  # Terraform-specific linting
+  # ──────────────────────────────────────────────────────────
+
+  - repo: https://github.com/antonbabenko/pre-commit-terraform
+    rev: v1.85.0
+    hooks:
+      - id: terraform_fmt
+        name: Terraform format
+        description: Formats Terraform files
+        entry: terraform fmt
+        language: system
+        types: [terraform]
+        exclude: ^modern-azure/infra/terraform/.terraform/
+
+      - id: terraform_validate
+        name: Terraform validate
+        description: Validates Terraform configuration
+        entry: bash -c 'cd modern-azure/infra/terraform && terraform validate'
+        language: system
+        types: [terraform]
+        pass_filenames: false
+        stages: [commit]
+
+      - id: terraform_tfsec
+        name: Terraform security scan
+        description: Scans Terraform for security issues
+        entry: tfsec
+        language: system
+        types: [terraform]
+        exclude: ^modern-azure/infra/terraform/.terraform/
+
+  # ──────────────────────────────────────────────────────────
+  # Python (Backend)
+  # ──────────────────────────────────────────────────────────
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+      - id: check-ast
+        name: Check Python AST
+        description: Validates Python syntax
+        types: [python]
+        files: ^modern-azure/backend/
+
+  - repo: https://github.com/psf/black
+    rev: 23.12.1
+    hooks:
+      - id: black
+        name: Black formatter
+        description: Formats Python code
+        language_version: python3.11
+        types: [python]
+        files: ^modern-azure/backend/
+        exclude: ^modern-azure/backend/.venv/
+
+  - repo: https://github.com/PyCQA/isort
+    rev: 5.13.2
+    hooks:
+      - id: isort
+        name: isort
+        description: Sorts Python imports
+        types: [python]
+        files: ^modern-azure/backend/
+        exclude: ^modern-azure/backend/.venv/
+
+  - repo: https://github.com/PyCQA/flake8
+    rev: 6.1.0
+    hooks:
+      - id: flake8
+        name: Flake8 linter
+        description: Lints Python code
+        types: [python]
+        files: ^modern-azure/backend/
+        exclude: ^modern-azure/backend/.venv/
+        args: [--max-line-length=120, --extend-ignore=E203]
+
+  # ──────────────────────────────────────────────────────────
+  # YAML
+  # ──────────────────────────────────────────────────────────
+
+  - repo: https://github.com/adrienverge/yamllint
+    rev: v1.33.0
+    hooks:
+      - id: yamllint
+        name: YAML linter
+        description: Lints YAML files
+        types: [yaml]
+        exclude: |
+          (?x)^(
+            modern-azure/infra/terraform/|
+            .github/workflows/
+          )
+
+  # ──────────────────────────────────────────────────────────
+  # Shell scripts
+  # ──────────────────────────────────────────────────────────
+
+  - repo: https://github.com/shellcheck-py/shellcheck-py
+    rev: v0.9.0.6
+    hooks:
+      - id: shellcheck
+        name: ShellCheck
+        description: Lints shell scripts
+        types: [shell]
+        args: [--severity=warning]
+
+# ────────────────────────────────────────────────────────────
+# Configuration
+# ────────────────────────────────────────────────────────────
+
+# Minimum pre-commit framework version required
+minimum_pre_commit_version: "2.15.0"
+
+# By default, hook stages are: [commit, push, manual, merge-commit]
+default_stages: [commit, push]
+
+# Fail if any hook fails
+fail_fast: false

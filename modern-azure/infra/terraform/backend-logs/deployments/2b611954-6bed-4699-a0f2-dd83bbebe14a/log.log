@@ -1,0 +1,58 @@
+2026-04-29T18:19:22.5085224Z,Updating submodules.,4a5a8c88-34e4-40c6-bd70-0e58ec7782fe,0
+2026-04-29T18:19:25.1139850Z,Preparing deployment for commit id '2b611954-6'.,eb799ffb-dcf4-43ca-ae8f-d5015ee7280e,0
+2026-04-29T18:19:28.2992024Z,PreDeployment: context.CleanOutputPath False,ca412f43-ee6f-4d24-9a1e-90b74a5055ec,0
+2026-04-29T18:19:29.2872464Z,PreDeployment: context.OutputPath /home/site/wwwroot,17a7d628-6c5e-4b67-b463-3e6e777e1704,0
+2026-04-29T18:19:30.3158973Z,Repository path is /tmp/zipdeploy/extracted,e85742e9-12df-4e5f-bc62-3c7c6c6c8a90,0
+2026-04-29T18:19:31.5164112Z,Running oryx build...,48bde39d-5a67-4bc9-9060-223ed130a562,0
+	2026-04-29T18:19:31.7885540Z,Command: oryx build /tmp/zipdeploy/extracted -o /home/site/wwwroot --platform php --platform-version 8.2 -p virtualenv_name= --log-file /tmp/build-debug.log  -i /tmp/8dea61bd967e551 | tee /tmp/oryx-build.log,,0
+	2026-04-29T18:20:32.3368078Z,Operation performed by Microsoft Oryx&comma; https://github.com/Microsoft/Oryx,,0
+	2026-04-29T18:20:32.5948838Z,You can report issues at https://github.com/Microsoft/Oryx/issues,,0
+	2026-04-29T18:20:32.6537196Z,,,0
+	2026-04-29T18:20:32.7742120Z,Oryx Version: 0.2.20260420.1+83c04e9ee1882dc90d279b63348824daedbd3c96&comma; Commit: 83c04e9ee1882dc90d279b63348824daedbd3c96&comma; ReleaseTagName: 20260420.1,,0
+	2026-04-29T18:20:32.8995438Z,,,0
+	2026-04-29T18:20:33.2849445Z,Build Operation ID: 5d1e530ab290e7ed,,0
+	2026-04-29T18:20:33.4432423Z,Repository Commit : 2b611954-6bed-4699-a0f2-dd83bbebe14a,,0
+	2026-04-29T18:20:33.6361607Z,OS Type           : bullseye,,0
+	2026-04-29T18:20:33.8188082Z,Image Type        : githubactions,,0
+	2026-04-29T18:20:34.0077577Z,,,0
+	2026-04-29T18:20:34.0454670Z,Primary SDK Storage URL: https://oryx-cdn.microsoft.io,,0
+	2026-04-29T18:20:34.2134457Z,Backup SDK Storage URL: ,,0
+	2026-04-29T18:20:34.3999599Z,ACR SDK Registry URL: (not set),,0
+	2026-04-29T18:20:34.5778795Z,SDK provider status:,,0
+	2026-04-29T18:20:34.6757061Z,  External ACR SDK provider: Disabled,,0
+	2026-04-29T18:20:34.7617956Z,  External SDK provider: Enabled,,0
+	2026-04-29T18:20:34.8100781Z,  Direct ACR SDK provider: Disabled,,0
+	2026-04-29T18:20:34.8699130Z,  Blob SDK provider: Enabled,,0
+	2026-04-29T18:20:35.2788529Z,Detecting platforms...,,0
+	2026-04-29T18:20:41.5803455Z,Requesting metadata for platform nodejs from external SDK provider,,0
+	2026-04-29T18:20:49.7608930Z,Requesting metadata for platform nodejs from external SDK provider,,0
+	2026-04-29T18:20:50.8020975Z,Successfully requested blob for platform nodejs&comma; blobName defaultVersion.bullseye.txt&comma; available at /var/OryxSdks/nodejs/defaultVersion.bullseye.txt,,0
+	2026-04-29T18:20:50.8881828Z,Version resolved using external SDK provider.,,0
+	2026-04-29T18:20:51.1147973Z,Requesting metadata for platform python from external SDK provider,,0
+	2026-04-29T18:20:53.2361544Z,Requesting metadata for platform python from external SDK provider,,0
+	2026-04-29T18:20:54.7117065Z,Successfully requested blob for platform python&comma; blobName defaultVersion.bullseye.txt&comma; available at /var/OryxSdks/python/defaultVersion.bullseye.txt,,0
+	2026-04-29T18:20:54.7978577Z,Version resolved using external SDK provider.,,0
+	2026-04-29T18:20:55.2826239Z,Detected following platforms:,,0
+	2026-04-29T18:20:55.3226713Z,  nodejs: 16.20.2,,0
+	2026-04-29T18:20:55.3437015Z,  python: 3.8.20,,0
+	2026-04-29T18:20:55.4145473Z,Requesting metadata for platform nodejs from external SDK provider,,0
+	2026-04-29T18:20:58.8695234Z,Successfully requested blob for platform nodejs&comma; blobName nodejs-bullseye-16.20.2.tar.gz&comma; available at /var/OryxSdks/nodejs/nodejs-bullseye-16.20.2.tar.gz,,0
+	2026-04-29T18:21:00.4479640Z,SDK for 'nodejs' version '16.20.2' fetched via external SDK provider.,,0
+	2026-04-29T18:21:00.5092153Z,Version '16.20.2' of platform 'nodejs' is not installed. Generating script to install it...,,0
+	2026-04-29T18:21:00.6057988Z,Requesting metadata for platform python from external SDK provider,,0
+	2026-04-29T18:21:11.5720424Z,Successfully requested blob for platform python&comma; blobName python-bullseye-3.8.20.tar.gz&comma; available at /var/OryxSdks/python/python-bullseye-3.8.20.tar.gz,,0
+	2026-04-29T18:21:17.5824990Z,SDK for 'python' version '3.8.20' fetched via external SDK provider.,,0
+	2026-04-29T18:21:17.7090531Z,Version '3.8.20' of platform 'python' is not installed. Generating script to install it...,,0
+	2026-04-29T18:21:18.7802513Z,Error: Couldn't detect a version for the platform 'php' in the repo.,,1
+	2026-04-29T18:21:19.9743365Z,Error: Couldn't detect a version for the platform 'php' in the repo.\n/bin/bash -c "oryx build /tmp/zipdeploy/extracted -o /home/site/wwwroot --platform php --platform-version 8.2 -p virtualenv_name= --log-file /tmp/build-debug.log  -i /tmp/8dea61bd967e551 | tee /tmp/oryx-build.log ; exit $PIPESTATUS ",,2
+2026-04-29T18:21:20.3582968Z,,e13c311f-cb3b-414d-af93-0e99a705ecac,0
+2026-04-29T18:21:20.4655069Z,Generating summary of Oryx build,5146e756-4daa-4190-b4ad-02e9b176f36d,0
+2026-04-29T18:21:20.6829573Z,Parsing the build logs,a358808f-07b9-4fb0-ac0b-580bb8c59067,0
+2026-04-29T18:21:20.7946061Z,Found 0 issue(s),138e67ed-5b5b-43ae-80e3-2313f9f92706,0
+2026-04-29T18:21:20.9021461Z,,aabefeac-fd94-47ac-beb1-543859a75231,0
+2026-04-29T18:21:21.0112350Z,Build Summary :,ed7b1186-ab6d-4735-b3f3-0a6f14dd0c3a,0
+2026-04-29T18:21:21.1516482Z,===============,059fe0b0-1491-47c3-8d10-0d8f73620c41,0
+2026-04-29T18:21:21.2680804Z,Errors (0),a7da6270-d40d-48ff-a4c6-136d9323dae8,0
+2026-04-29T18:21:21.4095732Z,Warnings (0),70ecfa5e-0add-45c7-b5ab-607c560b8df0,0
+2026-04-29T18:21:21.5218293Z,,698f14cc-9526-410f-9517-bceaa6b302c2,0
+2026-04-29T18:21:21.8169990Z,Deployment Failed. deployer = Push-Deployer deploymentPath = ZipDeploy. Extract zip. Remote build.,d785077f-043e-4a09-8b25-dc5fab8cf51f,0
